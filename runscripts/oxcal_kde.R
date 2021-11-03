@@ -24,13 +24,4 @@ res_large <- readLines(result_file_large)
 out.small <- read_kde(res_small,sigma=1.96)
 out.large <- read_kde(res_large,sigma=1.96)
 
-
-
-
-# plot(x$calBP,x$m/sum(x$m)/5,type='l',ylim=c(0,max(x$hi)/sum(x$m)/5),xlim=c(7000,3000))
-# polygon(c(x$calBP,rev(x$calBP)),c(x$hi/sum(x$m)/5,rev(x$lo/sum(x$m)/5)),border=NA,col=rgb(0,0,1,0.2))
-# lines(sim$CalBP,sim$PrDens,col=2,lwd=2)
-
-
-
-
+save(res_small,res_large,out.small,out.large,file=here('results','oxcal_kde_res.RData'))
