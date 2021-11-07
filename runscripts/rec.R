@@ -61,7 +61,7 @@ rece_sample.small <- rece_sample.small[with(rece_sample.small,order(-)),]
 # Nimble Model Fitting ----
 # core model
 nbCode <- nimbleCode({
-   B ~ dnorm(0,1)
+   B ~ dnorm(0,0.1)
    B0 ~ dnorm(0,100)
    sigB ~ dunif(1e-10,10)
    sigB0 ~ dunif(1e-10,10)
