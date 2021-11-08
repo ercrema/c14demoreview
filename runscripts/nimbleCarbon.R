@@ -32,18 +32,16 @@ d.small <- list(X=cra.small,sigma=cra.error.small)
 m.dates.large = medCal(calibrate(d.large$X,d.large$sigma,verbose = FALSE))
 m.dates.small = medCal(calibrate(d.small$X,d.small$sigma,verbose = FALSE))
 
-if(any(m.dates.large>4500|m.dates.large<6500)){m.dates.large[m.dates.large>4500]=4500;m.dates.large[m.dates.large<6500]=6500} 
-if(any(m.dates.small>4500|m.dates.small<6500)){m.dates.small[m.dates.small>4500]=4500;m.dates.small[m.dates.small<6500]=6500} 
+if(any(m.dates.large<4500|m.dates.large>6500)){m.dates.large[m.dates.large<4500]=4500;m.dates.large[m.dates.large>6500]=6500} 
+if(any(m.dates.small<4500|m.dates.small>6500)){m.dates.small[m.dates.small<4500]=4500;m.dates.small[m.dates.small>6500]=6500} 
 
-inits.large <- function()list(r=rnorm(1,0,0.1),theta=m.dates.large)
-inits.small <- list(r=rnorm(1,0,0.1),theta=m.dates.small)
+inits.large <- function()list(r=rnorm(1,0,0.05),theta=m.dates.large)
+inits.small <- function()list(r=rnorm(1,0,0.05),theta=m.dates.small)
 
-samples.large<- nimbleMCMC(code = exp.model,constants = constants.large,data = d.large,niter = 20000, nchains = 3, thin=1, nburnin = 10000, progressBar = TRUE, monitors=c('r'), inits=inits.large, samplesAsCodaMCMC=TRUE,setSeed=c(123,456,789))
-samples.small<- nimbleMCMC(code = exp.model,constants = constants.small,data = d.small,niter = 20000, nchains = 3, thin=1, nburnin = 10000, progressBar = TRUE, monitors=c('r'), inits=inits.small, samplesAsCodaMCMC=TRUE,setSeed=c(123,456,789))
+samples.large<- nimbleMCMC(code = exp.model,constants = constants.large,data = d.large,niter = 10000, nchains = 3, thin=1, nburnin = 3000, progressBar = TRUE, monitors=c('r'), inits=inits.large, samplesAsCodaMCMC=TRUE,setSeed=c(123,456,789))
+samples.small<- nimbleMCMC(code = exp.model,constants = constants.small,data = d.small,niter = 10000, nchains = 3, thin=1, nburnin = 3000, progressBar = TRUE, monitors=c('r'), inits=inits.small, samplesAsCodaMCMC=TRUE,setSeed=c(123,456,789))
 
-coda::gelman.diag(samples.large)
-coda::gelman.diag(samples.small)
+# coda::gelman.diag(samples.large)
+# coda::gelman.diag(samples.small)
 
-
-
-
+save(samples.large,samples.small,file=here('results','nimbleCarbon_res.RData'))
