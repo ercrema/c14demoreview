@@ -16,13 +16,13 @@ PD.large <- phaseCalibrator(data.large, CalArray.large, remove.external = TRUE)
 PD.small <- phaseCalibrator(data.small, CalArray.small, remove.external = TRUE)
 
 
-exp.large <- JDEoptim(lower=c(0), upper=c(1),fn=objectiveFunction, PDarray=PD.large, type='exp', NP=20, trace=T)
-exp.small <- JDEoptim(lower=c(0), upper=c(1),fn=objectiveFunction, PDarray=PD.small, type='exp', NP=20, trace=T)
+exp.large.admur <- JDEoptim(lower=c(0), upper=c(1),fn=objectiveFunction, PDarray=PD.large, type='exp', NP=20, trace=T)
+exp.small.admur <- JDEoptim(lower=c(0), upper=c(1),fn=objectiveFunction, PDarray=PD.small, type='exp', NP=20, trace=T)
 
-chain.large <- mcmc(PDarray=PD.large, startPars=exp.large$par, type='exp', N=100000, burn=2000, thin=5, jumps =0.0004)
-chain.small <- mcmc(PDarray=PD.small, startPars=exp.small$par, type='exp', N=100000, burn=2000, thin=5, jumps =0.0004)
+chain.large.admur <- mcmc(PDarray=PD.large, startPars=exp.large$par, type='exp', N=100000, burn=2000, thin=5, jumps =0.0004)
+chain.small.admur <- mcmc(PDarray=PD.small, startPars=exp.small$par, type='exp', N=100000, burn=2000, thin=5, jumps =0.0004)
 
-save(exp.large,exp.small,chain.large,chain.small,file=here('results','admur_res.RData'))
+save(exp.large.admur,exp.small.admur,chain.large.admur,chain.small.admur,file=here('results','admur_res.RData'))
 
 
 
