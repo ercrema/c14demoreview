@@ -12,9 +12,10 @@ c14post.large <- calibrate(cra.large,cra.error.large)
 c14post.small <- calibrate(cra.small,cra.error.small)
 
 resolution <- 1
-sample_date_range.large <- range(unlist(lapply(c14post.large$grids,function(x)range(x[,1]))))
-sample_date_range.small <- range(unlist(lapply(c14post.small$grids,function(x)range(x[,1]))))
-
+#sample_date_range.large <- range(unlist(lapply(c14post.large$grids,function(x)range(x[,1]))))
+#sample_date_range.small <- range(unlist(lapply(c14post.small$grids,function(x)range(x[,1]))))
+sample_date_range.large <- c(4500,6500)
+sample_date_range.small <- c(4500,6500)
 calSampleApprox <- function(x,t1,t2,r){
     n <- length(x)
     funs <- lapply(x,approxfun)
@@ -32,6 +33,7 @@ for(a in 1:1000){
     count_df.large <- as.data.frame(table(count_sample.large))
     names(count_df.large) <- c("Date","Count")
     rece_sample.large <- merge(rece_sample.large,count_df.large,by="Date",all=T)
+    colnames(rece_sample.large) <- c('Date',paste0('Count',1:a))
 }
 
 rece_sample.large <- as.matrix(rece_sample.large[,-1])
@@ -49,13 +51,14 @@ for(a in 1:1000){
     count_df.small <- as.data.frame(table(count_sample.small))
     names(count_df.small) <- c("Date","Count")
     rece_sample.small <- merge(rece_sample.small,count_df.small,by="Date",all=T)
+    colnames(rece_sample.small) <- c('Date',paste0('Count',1:a))
 }
 
 rece_sample.small <- as.matrix(rece_sample.small[,-1])
 rece_sample.small[which(is.na(rece_sample.small))] <- 0
 colnames(rece_sample.small) <- 1:1000
 rece_sample.small <- as.data.frame(cbind(Dates.small,rece_sample.small))
-rece_sample.small <- rece_sample.small[with(rece_sample.small,order(-)),]
+rece_sample.small <- rece_sample.small[with(rece_sample.small,order(-Dates.small)),]
 
 
 # Nimble Model Fitting ----
@@ -77,7 +80,7 @@ nbCode <- nimbleCode({
 })
 
 # Data Prep
-Y.large <- as.matrix(rece_sample.large[,2:51])
+Y.large <- as.matrix(rece_sample.large[,2:101])
 N.large <- dim(Y.large)[1]
 J.large <- dim(Y.large)[2]
 X.large <- 0:(N.large-1)
@@ -86,7 +89,7 @@ nbData.large <- list(Y=Y.large[Nsub.large,],X=X.large[Nsub.large])
 nbConsts.large <- list(N=length(Nsub.large),J=J.large)
 nbInits.large <- list(B=0,B0=0,b=rep(0,J.large),b0=rep(0,J.large),sigB=0.0001,sigB0=0.0001)
 
-Y.small <- as.matrix(rece_sample.small[,2:51])
+Y.small <- as.matrix(rece_sample.small[,2:101])
 N.small <- dim(Y.small)[1]
 J.small <- dim(Y.small)[2]
 X.small <- 0:(N.small-1)
@@ -126,10 +129,10 @@ nbModelMCMC.small <- buildMCMC(nbModel_conf.small)
 C_nbModelMCMC.small <- compileNimble(nbModelMCMC.small,project=nbModel.small)
 
 # Run Model
-set.seed(123)
-samples.large <- runMCMC(C_nbModelMCMC.large,nburnin=5000, niter=10000,nchains=3,samplesAsCodaMCMC=TRUE)
-set.seed(123)
-samples.small <- runMCMC(C_nbModelMCMC.small,nburnin=5000, niter=10000,nchains=3,samplesAsCodaMCMC=TRUE)
+samples.large <- runMCMC(C_nbModelMCMC.large,nburnin=30000, niter=60000, thin=3, nchains=3,samplesAsCodaMCMC=TRUE,setSeed=c(123,456,789))
+samples.small <- runMCMC(C_nbModelMCMC.small,nburnin=30000, niter=60000, thin=3, nchains=3,samplesAsCodaMCMC=TRUE,setSeed=c(123,456,789))
 
+coda::gelman.diag(samples.large.rec$samples)
+coda::gelman.diag(samples.small.rec$samples)
 
-
+save(samples.large.rec,samples.small.rec,file=here('results','rec_res.RData'))
