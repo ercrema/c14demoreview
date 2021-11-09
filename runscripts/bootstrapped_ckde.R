@@ -17,8 +17,4 @@ boot.small <- sampleDates(cal.small,nsim=1000,boot=TRUE)
 ckde.large <- ckde(boot.large,timeRange=c(7000,3000),bw=50)
 ckde.small <- ckde(boot.small,timeRange=c(7000,3000),bw=50)
 
-# Quick Plot ----
-# plot(ckde.large)
-# lines(sim$CalBP,sim$PrDens,lwd=2,col=2)
-# plot(ckde.small)
-# lines(sim$CalBP,sim$PrDens,lwd=2,col=2)
+save(ckde.large,ckde.small,file=here('results','ckde_res.RData'))
