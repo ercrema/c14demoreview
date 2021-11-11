@@ -2,9 +2,9 @@ library(rcarbon)
 library(here)
 
 # Read Data ----
-large <- read.csv(file=here('data','large_sim_sample.csv'))
-small <- read.csv(file=here('data','small_sim_sample.csv'))
-sim <- read.csv(file=here('data','sim.csv'))
+large <- read.csv(file=here('data','large_sim1_sample.csv'))
+small <- read.csv(file=here('data','small_sim1_sample.csv'))
+sim <- read.csv(file=here('data','sim1.csv'))
 # Calibrate ----
 cal.large <- calibrate(large$cra,large$cra.error)
 cal.small <- calibrate(small$cra,small$cra.error)
