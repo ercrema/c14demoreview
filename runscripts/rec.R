@@ -11,7 +11,7 @@ Ndates.small <- length(cra.small)
 c14post.large <- calibrate(cra.large,cra.error.large)
 c14post.small <- calibrate(cra.small,cra.error.small)
 
-resolution <- 1
+resolution <- 10
 #sample_date_range.large <- range(unlist(lapply(c14post.large$grids,function(x)range(x[,1]))))
 #sample_date_range.small <- range(unlist(lapply(c14post.small$grids,function(x)range(x[,1]))))
 sample_date_range.large <- c(4500,6500)
@@ -80,7 +80,7 @@ nbCode <- nimbleCode({
 })
 
 # Data Prep
-Y.large <- as.matrix(rece_sample.large[,2:101])
+Y.large <- as.matrix(rece_sample.large[,2:1001])
 N.large <- dim(Y.large)[1]
 J.large <- dim(Y.large)[2]
 X.large <- 0:(N.large-1)
@@ -89,7 +89,7 @@ nbData.large <- list(Y=Y.large[Nsub.large,],X=X.large[Nsub.large])
 nbConsts.large <- list(N=length(Nsub.large),J=J.large)
 nbInits.large <- list(B=0,B0=0,b=rep(0,J.large),b0=rep(0,J.large),sigB=0.0001,sigB0=0.0001)
 
-Y.small <- as.matrix(rece_sample.small[,2:101])
+Y.small <- as.matrix(rece_sample.small[,2:1001])
 N.small <- dim(Y.small)[1]
 J.small <- dim(Y.small)[2]
 X.small <- 0:(N.small-1)
@@ -129,8 +129,8 @@ nbModelMCMC.small <- buildMCMC(nbModel_conf.small)
 C_nbModelMCMC.small <- compileNimble(nbModelMCMC.small,project=nbModel.small)
 
 # Run Model
-samples.large <- runMCMC(C_nbModelMCMC.large,nburnin=30000, niter=60000, thin=3, nchains=3,samplesAsCodaMCMC=TRUE,setSeed=c(123,456,789))
-samples.small <- runMCMC(C_nbModelMCMC.small,nburnin=30000, niter=60000, thin=3, nchains=3,samplesAsCodaMCMC=TRUE,setSeed=c(123,456,789))
+samples.large <- runMCMC(C_nbModelMCMC.large,nburnin=100000, niter=200000, thin=10, nchains=3,samplesAsCodaMCMC=TRUE,setSeed=c(123,456,789))
+samples.small <- runMCMC(C_nbModelMCMC.small,nburnin=100000, niter=200000, thin=10, nchains=3,samplesAsCodaMCMC=TRUE,setSeed=c(123,456,789))
 
 coda::gelman.diag(samples.large.rec$samples)
 coda::gelman.diag(samples.small.rec$samples)
