@@ -2,7 +2,7 @@ library(here)
 library(baydem)
 
 # Small Sample ----
-small.data <- import_rc_data(here('data','small_sim_sample.csv'),phi_m_col='phi_m',sig_m_col='sig_m')
+small.data <- import_rc_data(here('data','small_sim1_sample.csv'),phi_m_col='phi_m',sig_m_col='sig_m')
 set_rc_meas(here('results'),"baydem_small_res",small.data)
 analysis <- readRDS(here('results','baydem_small_res.rds'))
 tau_range <- calc_tau_range(analysis$rc_meas,calibration_curve="intcal20",dtau=5)
@@ -14,21 +14,21 @@ hp <- list()
 # Parameter for the dirichlet draw of the mixture probabilities
 hp$alpha_d <- 1 
 # The gamma distribution shape parameter for sigma
-hp$alpha_s <- 10
+hp$alpha_s <- 5
 # The gamma distribution rate parameter for sigma, yielding a mode of 50
-hp$alpha_r <- (10 - 1) / 50
+hp$alpha_r <- (5 - 1) / 500
 # Spacing for the measurement matrix (years)
 hp$dtau <- 1
 
 # Run Bayesian Analyses in Stan
-do_bayesian_inference(here('results'),"baydem_small_res",hp)
+do_bayesian_inference(here('results'),"baydem_small_res",hp,control=list(samps_per_chain=5000))
 
 # Bayesian Summary
 do_bayesian_summary(here('results'),"baydem_small_res")
 
 
 # Large Sample -----
-large.data <- import_rc_data(here('data','large_sim_sample.csv'),phi_m_col='phi_m',sig_m_col='sig_m')
+large.data <- import_rc_data(here('data','large_sim1_sample.csv'),phi_m_col='phi_m',sig_m_col='sig_m')
 set_rc_meas(here('results'),"baydem_large_res",large.data)
 analysis <- readRDS(here('results','baydem_large_res.rds'))
 tau_range <- calc_tau_range(analysis$rc_meas,calibration_curve="intcal20",dtau=5)
@@ -40,14 +40,15 @@ hp <- list()
 # Parameter for the dirichlet draw of the mixture probabilities
 hp$alpha_d <- 1 
 # The gamma distribution shape parameter for sigma
-hp$alpha_s <- 10
+hp$alpha_s <- 5
 # The gamma distribution rate parameter for sigma, yielding a mode of 50
-hp$alpha_r <- (10 - 1) / 50
+hp$alpha_r <- (5 - 1) / 500
 # Spacing for the measurement matrix (years)
 hp$dtau <- 1
 
 # Run Bayesian Analyses in Stan
-do_bayesian_inference(here('results'),"baydem_large_res",hp)
+do_bayesian_inference(here('results'),"baydem_large_res",hp,control=list(samps_per_chain=5000))
+
 
 # Bayesian Summary
 do_bayesian_summary(here('results'),"baydem_large_res")
