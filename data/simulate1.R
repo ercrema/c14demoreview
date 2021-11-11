@@ -1,7 +1,7 @@
 library(rcarbon)
 library(here)
 
-# Simulate a logistic growth model with K varying as a function of a covariate
+# Generate Target population ----
 x <- c(7000,6600,5900,5300,4600,4000,3900,3500,3200,3100,3000)
 y <- c(0.8,1.1,1,0.8,0.2,0.5,0.8,1.5,0.3,0.1,0.2)
 env.model  <- lm(y~poly(x,4))
@@ -20,22 +20,23 @@ for (i in 2:nt)
 	pop[i] = K[i] / (1 + ((K[i]-pop[i-1])/pop[i-1])*exp(-r))
 }
 df.prob = data.frame(CalBP=a:b,PrDens= pop/sum(pop))
-write.csv(df.prob,file=here('data','sim.csv'))
-# Sample Dates
+write.csv(df.prob,file=here('data','sim1.csv'))
+
+# Sample Dates from Target population ----
 ## Large
-N = 300
+N = 1000
 set.seed(123)
 cra <- uncalibrate(sample(df.prob$CalBP,size=N,replace = TRUE,prob=df.prob$PrDens))$rCRA
 cra.error <- rep(20,N)
 phi_m <- exp(-cra / 8033)
 sig_m <- cra.error * phi_m / 8033
-write.csv(data.frame(cra=cra,cra.error=cra.error,phi_m=phi_m,sig_m=sig_m),file=here('data','large_sim_sample.csv'))
+write.csv(data.frame(cra=cra,cra.error=cra.error,phi_m=phi_m,sig_m=sig_m),file=here('data','large_sim1_sample.csv'))
 ## Small
-N = 10
+N = 100
 cra <- uncalibrate(sample(df.prob$CalBP,size=N,replace = TRUE,prob=df.prob$PrDens))$rCRA
 cra.error <- rep(20,N)
 phi_m <- exp(-cra / 8033)
 sig_m <- cra.error * phi_m / 8033
-write.csv(data.frame(cra=cra,cra.error=cra.error,phi_m=phi_m,sig_m=sig_m),file=here('data','small_sim_sample.csv'))
+write.csv(data.frame(cra=cra,cra.error=cra.error,phi_m=phi_m,sig_m=sig_m),file=here('data','small_sim1_sample.csv'))
 
 
