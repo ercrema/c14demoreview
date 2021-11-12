@@ -1,6 +1,8 @@
 library(here)
 library(rcarbon)
 library(nimble)
+library(parallel)
+library(coda)
 
 # Load Simulated Data ----
 load(here('data','sim2.RData'))
@@ -61,26 +63,9 @@ rece_sample.small <- as.data.frame(cbind(Dates.small,rece_sample.small))
 rece_sample.small <- rece_sample.small[with(rece_sample.small,order(-Dates.small)),]
 
 
-# Nimble Model Fitting ----
-# core model
-nbCode <- nimbleCode({
-   B ~ dnorm(0,0.1)
-   B0 ~ dnorm(0,100)
-   sigB ~ dunif(1e-10,10)
-   sigB0 ~ dunif(1e-10,10)
-   for (j in 1:J) {
-      b[j] ~ dnorm(mean=B,sd=sigB)
-      b0[j] ~ dnorm(mean=B0,sd=sigB0)
-      for (n in 1:N){
-        p[n,j] ~ dunif(1e-10,1)
-        r[n,j] <- exp(b0[j] + X[n] * b[j])
-        Y[n,j] ~ dnegbin(size=r[n,j],prob=p[n,j])
-      }
-   }
-})
-
 # Data Prep
-Y.large <- as.matrix(rece_sample.large[,2:1001])
+matrix.sample.size = 1000
+Y.large <- as.matrix(rece_sample.large[,2:(matrix.sample.size+1)])
 N.large <- dim(Y.large)[1]
 J.large <- dim(Y.large)[2]
 X.large <- 0:(N.large-1)
@@ -89,7 +74,7 @@ nbData.large <- list(Y=Y.large[Nsub.large,],X=X.large[Nsub.large])
 nbConsts.large <- list(N=length(Nsub.large),J=J.large)
 nbInits.large <- list(B=0,B0=0,b=rep(0,J.large),b0=rep(0,J.large),sigB=0.0001,sigB0=0.0001)
 
-Y.small <- as.matrix(rece_sample.small[,2:1001])
+Y.small <- as.matrix(rece_sample.small[,2:matrix.sample.size+1])
 N.small <- dim(Y.small)[1]
 J.small <- dim(Y.small)[2]
 X.small <- 0:(N.small-1)
@@ -98,41 +83,71 @@ nbData.small <- list(Y=Y.small[Nsub.small,],X=X.small[Nsub.small])
 nbConsts.small <- list(N=length(Nsub.small),J=J.small)
 nbInits.small <- list(B=0,B0=0,b=rep(0,J.small),b0=rep(0,J.small),sigB=0.0001,sigB0=0.0001)
 
+# Nimble Runscript  ----
+runScript <- function(seed,d,inits,constants,niter,nburnin,thin)
+{
+	# load library for each core
+	library(nimble)
+	# core model
+	nbCode <- nimbleCode({
+		B ~ dnorm(0,0.1)
+		B0 ~ dnorm(0,100)
+		sigB ~ dunif(1e-10,10)
+		sigB0 ~ dunif(1e-10,10)
+		for (j in 1:J) {
+			b[j] ~ dnorm(mean=B,sd=sigB)
+			b0[j] ~ dnorm(mean=B0,sd=sigB0)
+			for (n in 1:N){
+				p[n,j] ~ dunif(1e-10,1)
+				r[n,j] <- exp(b0[j] + X[n] * b[j])
+				Y[n,j] ~ dnegbin(size=r[n,j],prob=p[n,j])
+			}
+		}
+	})
 
 
-
-# Define Model
-nbModel.large <- nimbleModel(code=nbCode,data=nbData.large,inits=nbInits.large,constants=nbConsts.large)
-C_nbModel.large <- compileNimble(nbModel.large, showCompilerOutput = FALSE)
-nbModel_conf.large <- configureMCMC(nbModel.large)
-nbModel_conf.large$monitors <- c("B","B0","sigB","sigB0")
-nbModel_conf.large$addMonitors2(c("b","b0"))
-nbModel_conf.large$removeSamplers(c("B","B0","b","b0","sigB","sigB0"))
-nbModel_conf.large$addSampler(target=c("B","B0","sigB","sigB0"),type="AF_slice")
-for(j in 1:J.large){
-   nbModel_conf.large$addSampler(target=c(paste("b[",j,"]",sep=""),paste("b0[",j,"]",sep="")),type="AF_slice")
+	nbModel <- nimbleModel(code=nbCode,data=d,inits=inits,constants=constants)
+	C_nbModel <- compileNimble(nbModel, showCompilerOutput = FALSE)
+	nbModel_conf <- configureMCMC(nbModel)
+	nbModel_conf$monitors <- c("B","B0","sigB","sigB0")
+	nbModel_conf$addMonitors2(c("b","b0"))
+	nbModel_conf$removeSamplers(c("B","B0","b","b0","sigB","sigB0"))
+	nbModel_conf$addSampler(target=c("B","B0","sigB","sigB0"),type="AF_slice")
+	for(j in 1:constants$J){
+		nbModel_conf$addSampler(target=c(paste("b[",j,"]",sep=""),paste("b0[",j,"]",sep="")),type="AF_slice")
+	}
+	nbModelMCMC <- buildMCMC(nbModel_conf)
+	C_nbModelMCMC <- compileNimble(nbModelMCMC,project=nbModel)
+	out <- runMCMC(C_nbModelMCMC,nburnin=nburnin, niter=niter, thin=thin, nchains=1,samplesAsCodaMCMC=TRUE,setSeed=c(seed))
+	return(out)
 }
-nbModelMCMC.large <- buildMCMC(nbModel_conf.large)
-C_nbModelMCMC.large <- compileNimble(nbModelMCMC.large,project=nbModel.large)
 
-nbModel.small <- nimbleModel(code=nbCode,data=nbData.small,inits=nbInits.small,constants=nbConsts.small)
-C_nbModel.small <- compileNimble(nbModel.small, showCompilerOutput = FALSE)
-nbModel_conf.small <- configureMCMC(nbModel.small)
-nbModel_conf.small$monitors <- c("B","B0","sigB","sigB0")
-nbModel_conf.small$addMonitors2(c("b","b0"))
-nbModel_conf.small$removeSamplers(c("B","B0","b","b0","sigB","sigB0"))
-nbModel_conf.small$addSampler(target=c("B","B0","sigB","sigB0"),type="AF_slice")
-for(j in 1:J.small){
-   nbModel_conf.small$addSampler(target=c(paste("b[",j,"]",sep=""),paste("b0[",j,"]",sep="")),type="AF_slice")
-}
-nbModelMCMC.small <- buildMCMC(nbModel_conf.small)
-C_nbModelMCMC.small <- compileNimble(nbModelMCMC.small,project=nbModel.small)
+# Run MCMC in parallel ----
+ncores <- 3
+cl <- makeCluster(ncores)
+# Run the model in parallel:
+seeds <- c(123, 456)
+niter = 200000
+nburnin = 100000
+thin = 10
 
-# Run Model
-samples.large <- runMCMC(C_nbModelMCMC.large,nburnin=100000, niter=200000, thin=10, nchains=3,samplesAsCodaMCMC=TRUE,setSeed=c(123,456,789))
-samples.small <- runMCMC(C_nbModelMCMC.small,nburnin=100000, niter=200000, thin=10, nchains=3,samplesAsCodaMCMC=TRUE,setSeed=c(123,456,789))
 
+output.small <- parLapply(cl = cl, X = seeds, fun= runScript,d = nbData.small,constants = nbConsts.small, inits=nbInits.small, niter=niter,nburnin = nburnin, thin=thin)
+output.large <- parLapply(cl = cl, X = seeds, fun= runScript,d = nbData.large,constants = nbConsts.large, inits=nbInits.large, niter=niter,nburnin = nburnin, thin=thin)
+stopCluster(cl)
+
+res.small.out1  = lapply(output.small,function(x){x$samples})
+res.small.out2  = lapply(output.small,function(x){x$samples2})
+rec.small1 = mcmc.list(res.small.out1)
+rec.small2 = mcmc.list(res.small.out2)
+gelman.diag(rec.small1)
+gelman.diag(rec.small2)
+
+res.large.out1  = lapply(output.large,function(x){x$samples})
+res.large.out2  = lapply(output.large,function(x){x$samples2})
+rec.large1 = mcmc.list(res.large.out1)
+rec.large2 = mcmc.list(res.large.out2)
 coda::gelman.diag(samples.large.rec$samples)
 coda::gelman.diag(samples.small.rec$samples)
 
-save(samples.large.rec,samples.small.rec,file=here('results','rec_res.RData'))
+save(rec.small1,rec.small2,rec.large1,rec.large2,file=here('results','rec_res.RData'))
