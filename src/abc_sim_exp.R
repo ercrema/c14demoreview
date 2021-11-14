@@ -19,13 +19,19 @@ abc_sim_exp <- function(r,n,a,b,errors,target.spd)
 	cra.model <- uncalibrate(model,verbose=F)
 
 	niter  <- length(n)
-	epsilon  <- numeric(length=niter)
-	for (i in 1:niter)
+	if (any(is.na(cra.model$PrDens)))
 	{
-		uncal.samples = sample(cra.model$CRA,size=n[i],prob=cra.model$PrDens,replace=TRUE)
-		cal.samples = calibrate(uncal.samples,sample(errors,size=n[i],replace=T),verbose=FALSE)
-		spd.candidate = spd(cal.samples,timeRange=c(a,b),verbose=FALSE,spdnormalised=T)
-		epsilon[i] = sqrt(sum((target.spd[[i]]-spd.candidate$grid$PrDens)^2))
+		epsilon <- rep(NA,niter)
+		return(epsilon)
+	} else {
+		epsilon  <- numeric(length=niter)
+		for (i in 1:niter)
+		{
+			uncal.samples = sample(cra.model$CRA,size=n[i],prob=cra.model$PrDens,replace=TRUE)
+			cal.samples = calibrate(uncal.samples,sample(errors,size=n[i],replace=T),verbose=FALSE)
+			spd.candidate = spd(cal.samples,timeRange=c(a,b),verbose=FALSE,spdnormalised=T)
+			epsilon[i] = sqrt(sum((target.spd[[i]]-spd.candidate$grid$PrDens)^2))
+		}
+		return(epsilon)
 	}
-	return(epsilon)
 }
