@@ -13,7 +13,7 @@ Ndates.small <- length(cra.small)
 c14post.large <- calibrate(cra.large,cra.error.large)
 c14post.small <- calibrate(cra.small,cra.error.small)
 
-resolution <- 10
+resolution <- 20
 #sample_date_range.large <- range(unlist(lapply(c14post.large$grids,function(x)range(x[,1]))))
 #sample_date_range.small <- range(unlist(lapply(c14post.small$grids,function(x)range(x[,1]))))
 sample_date_range.large <- c(4500,6500)
@@ -116,9 +116,11 @@ runScript <- function(seed,d,inits,constants,niter,nburnin,thin)
 	for(j in 1:constants$J){
 		nbModel_conf$addSampler(target=c(paste("b[",j,"]",sep=""),paste("b0[",j,"]",sep="")),type="AF_slice")
 	}
+	nbModel_conf$thin = thin
+	nbModel_conf$thin2 = thin
 	nbModelMCMC <- buildMCMC(nbModel_conf)
 	C_nbModelMCMC <- compileNimble(nbModelMCMC,project=nbModel)
-	out <- runMCMC(C_nbModelMCMC,nburnin=nburnin, niter=niter, thin=thin, nchains=1,samplesAsCodaMCMC=TRUE,setSeed=c(seed))
+	out <- runMCMC(C_nbModelMCMC,nburnin=nburnin, niter=niter, nchains=1,samplesAsCodaMCMC=TRUE,setSeed=c(seed))
 	return(out)
 }
 
@@ -126,10 +128,10 @@ runScript <- function(seed,d,inits,constants,niter,nburnin,thin)
 ncores <- 3
 cl <- makeCluster(ncores)
 # Run the model in parallel:
-seeds <- c(123, 456)
-niter = 200000
-nburnin = 100000
-thin = 10
+seeds <- c(123, 456, 789)
+niter = 2000000
+nburnin = 1000000
+thin = 200
 
 
 output.small <- parLapply(cl = cl, X = seeds, fun= runScript,d = nbData.small,constants = nbConsts.small, inits=nbInits.small, niter=niter,nburnin = nburnin, thin=thin)
