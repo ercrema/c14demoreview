@@ -52,3 +52,29 @@ do_bayesian_inference(here('results'),"baydem_large_res",hp,control=list(samps_p
 
 # Bayesian Summary
 do_bayesian_summary(here('results'),"baydem_large_res")
+
+# Exctract best fitted model estimates ----
+baydem.small <- readRDS(here('results','baydem_small_res.rds'))
+bestK.small <- baydem.small$K_best
+baydem.small.plot <- data.frame(CalBP=BCADtoBP(baydem.small$bayesian_summary$tau))
+ind.lo.small <- which(baydem.small$bayesian_summary$probs == 0.025)
+ind.hi.small <- which(baydem.small$bayesian_summary$probs == 0.975)
+ind.m.small <- which(baydem.small$bayesian_summary$probs == 0.5)
+baydem.small.plot$lo <- baydem.small$bayesian_summary$Qdens[ind.lo.small,]
+baydem.small.plot$hi <- baydem.small$bayesian_summary$Qdens[ind.hi.small,]
+baydem.small.plot$m <- baydem.small$bayesian_summary$Qdens[ind.m.small,]
+
+baydem.large <- readRDS(here('results','baydem_large_res.rds'))
+bestK.large <- baydem.large$K_best
+baydem.large.plot <- data.frame(CalBP=BCADtoBP(baydem.large$bayesian_summary$tau))
+ind.lo.large <- which(baydem.large$bayesian_summary$probs == 0.025)
+ind.hi.large <- which(baydem.large$bayesian_summary$probs == 0.975)
+ind.m.large <- which(baydem.large$bayesian_summary$probs == 0.5)
+baydem.large.plot$lo <- baydem.large$bayesian_summary$Qdens[ind.lo.large,]
+baydem.large.plot$hi <- baydem.large$bayesian_summary$Qdens[ind.hi.large,]
+baydem.large.plot$m <- baydem.large$bayesian_summary$Qdens[ind.m.large,]
+
+save(bestK.small,bestK.large,baydem.large.plot,baydem.large.plot,file=here('results','baydem_res.RData'))
+
+
+
