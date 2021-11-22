@@ -74,7 +74,7 @@ baydem.large.plot$lo <- baydem.large$bayesian_summary$Qdens[ind.lo.large,]
 baydem.large.plot$hi <- baydem.large$bayesian_summary$Qdens[ind.hi.large,]
 baydem.large.plot$m <- baydem.large$bayesian_summary$Qdens[ind.m.large,]
 
-save(bestK.small,bestK.large,baydem.large.plot,baydem.large.plot,file=here('results','baydem_res.RData'))
+save(bestK.small,bestK.large,baydem.small.plot,baydem.large.plot,file=here('results','baydem_res.RData'))
 
 
 
