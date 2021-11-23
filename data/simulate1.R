@@ -38,5 +38,11 @@ cra.error <- rep(20,N)
 phi_m <- exp(-cra / 8033)
 sig_m <- cra.error * phi_m / 8033
 write.csv(data.frame(cra=cra,cra.error=cra.error,phi_m=phi_m,sig_m=sig_m),file=here('data','small_sim1_sample.csv'))
-
+## Tiny
+N = 10
+cra <- uncalibrate(sample(df.prob$CalBP,size=N,replace = TRUE,prob=df.prob$PrDens))$rCRA
+cra.error <- rep(20,N)
+phi_m <- exp(-cra / 8033)
+sig_m <- cra.error * phi_m / 8033
+write.csv(data.frame(cra=cra,cra.error=cra.error,phi_m=phi_m,sig_m=sig_m),file=here('data','tiny_sim1_sample.csv'))
 
