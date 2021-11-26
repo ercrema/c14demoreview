@@ -13,7 +13,7 @@ Ndates.small <- length(cra.small)
 c14post.large <- calibrate(cra.large,cra.error.large)
 c14post.small <- calibrate(cra.small,cra.error.small)
 
-resolution <- 20
+resolution <- 50
 #sample_date_range.large <- range(unlist(lapply(c14post.large$grids,function(x)range(x[,1]))))
 #sample_date_range.small <- range(unlist(lapply(c14post.small$grids,function(x)range(x[,1]))))
 sample_date_range.large <- c(4500,6500)
@@ -64,7 +64,7 @@ rece_sample.small <- rece_sample.small[with(rece_sample.small,order(-Dates.small
 
 
 # Data Prep
-matrix.sample.size = 1000
+matrix.sample.size = 300
 Y.large <- as.matrix(rece_sample.large[,2:(matrix.sample.size+1)])
 N.large <- dim(Y.large)[1]
 J.large <- dim(Y.large)[2]
@@ -129,9 +129,9 @@ ncores <- 3
 cl <- makeCluster(ncores)
 # Run the model in parallel:
 seeds <- c(123, 456, 789)
-niter = 2000000
-nburnin = 1000000
-thin = 200
+niter = 8000000
+nburnin = 4000000
+thin = 400
 
 
 output.small <- parLapply(cl = cl, X = seeds, fun= runScript,d = nbData.small,constants = nbConsts.small, inits=nbInits.small, niter=niter,nburnin = nburnin, thin=thin)
@@ -142,6 +142,7 @@ res.small.out1  = lapply(output.small,function(x){x$samples})
 res.small.out2  = lapply(output.small,function(x){x$samples2})
 rec.small1 = mcmc.list(res.small.out1)
 rec.small2 = mcmc.list(res.small.out2)
+
 gelman.diag(rec.small1)
 gelman.diag(rec.small2)
 
@@ -149,7 +150,7 @@ res.large.out1  = lapply(output.large,function(x){x$samples})
 res.large.out2  = lapply(output.large,function(x){x$samples2})
 rec.large1 = mcmc.list(res.large.out1)
 rec.large2 = mcmc.list(res.large.out2)
-coda::gelman.diag(samples.large.rec$samples)
-coda::gelman.diag(samples.small.rec$samples)
+coda::gelman.diag(rec.large1)
+coda::gelman.diag(rec.large2)
 
 save(rec.small1,rec.small2,rec.large1,rec.large2,file=here('results','rec_res.RData'))
