@@ -1,5 +1,6 @@
 library(here)
 library(baydem)
+library(rcarbon)
 
 # Tiny Sample ----
 tiny.data <- import_rc_data(here('data','tiny_sim1_sample.csv'),phi_m_col='phi_m',sig_m_col='sig_m')
