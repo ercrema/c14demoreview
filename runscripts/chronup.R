@@ -20,7 +20,7 @@ ncores <- 3
 cl  <- parallel::makeCluster(ncores)
 parallel::clusterEvalQ(cl,{wd<-getwd();library(chronup)})
 rece.large  <- pbapply::pbsapply(cl=cl,X=1:J,FUN=chronup::sample_event_counts,chronun_matrix=chronun_matrix_large$chronun_matrix,times=new_times.large,breaks=new_breaks.large)
-qece.small  <- pbapply::pbsapply(cl=cl,X=1:J,FUN=chronup::sample_event_counts,chronun_matrix=chronun_matrix_small$chronun_matrix,times=new_times.small,breaks=new_breaks.small)
+rece.small  <- pbapply::pbsapply(cl=cl,X=1:J,FUN=chronup::sample_event_counts,chronun_matrix=chronun_matrix_small$chronun_matrix,times=new_times.small,breaks=new_breaks.small)
 parallel::stopCluster(cl)
 
 
