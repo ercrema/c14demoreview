@@ -13,7 +13,7 @@ Ndates.small <- length(cra.small)
 c14post.large <- calibrate(cra.large,cra.error.large)
 c14post.small <- calibrate(cra.small,cra.error.small)
 
-resolution <- 50
+resolution <- 1
 #sample_date_range.large <- range(unlist(lapply(c14post.large$grids,function(x)range(x[,1]))))
 #sample_date_range.small <- range(unlist(lapply(c14post.small$grids,function(x)range(x[,1]))))
 sample_date_range.large <- c(4500,6500)
@@ -64,7 +64,7 @@ rece_sample.small <- rece_sample.small[with(rece_sample.small,order(-Dates.small
 
 
 # Data Prep
-matrix.sample.size = 300
+matrix.sample.size = 100
 Y.large <- as.matrix(rece_sample.large[,2:(matrix.sample.size+1)])
 N.large <- dim(Y.large)[1]
 J.large <- dim(Y.large)[2]
@@ -129,9 +129,9 @@ ncores <- 3
 cl <- makeCluster(ncores)
 # Run the model in parallel:
 seeds <- c(123, 456, 789)
-niter = 8000000
-nburnin = 4000000
-thin = 400
+niter = 6000000
+nburnin = 3000000
+thin = 300
 
 
 output.small <- parLapply(cl = cl, X = seeds, fun= runScript,d = nbData.small,constants = nbConsts.small, inits=nbInits.small, niter=niter,nburnin = nburnin, thin=thin)
