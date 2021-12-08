@@ -60,20 +60,16 @@ Please not that the execution of the scripts `baydem_gauss_mixture.R`, `rec.R`, 
 │   ├── abc_res.RData
 │   ├── admur_res.RData
 │   ├── baydem_res.RData
-│   ├── chronup_res.RData
 │   ├── ckde_res.RData
 │   ├── glm_res.RData
 │   ├── nimbleCarbon_res.RData
 │   ├── oxcal_kde_res.RData
-│   ├── rc_example_large.rds
-│   ├── rc_example_small.rds
 │   └── rec_res.RData
 ├── runscripts
 │   ├── abc.R
 │   ├── admur.R
 │   ├── baydem_gauss_mixture.R
 │   ├── bootstrapped_ckde.R
-│   ├── chronup.R
 │   ├── nimbleCarbon.R
 │   ├── nls.R
 │   ├── oxcal_kde.R
