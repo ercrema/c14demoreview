@@ -47,7 +47,7 @@ coldot = 'black'
 
 pdf(file=here('figures','figure2.pdf'),width=6,height=5)
 
-plot(NULL,xlim=c(1,9.5),ylim=c(0.0008,0.0028),axes=FALSE,xlab='',ylab='Exponential Growth Rate')
+plot(NULL,xlim=c(1,9.5),ylim=c(0.0008,0.003),axes=FALSE,xlab='',ylab='Exponential Growth Rate')
 rect(xleft=1-gap,xright=1+gap,ybottom=glm.ci95.large[1],ytop=glm.ci95.large[2],col=col1,border=NA)
 points(1,glm.fit.large,pch=20,col=coldot,cex=1.2)
 rect(xleft=1.5-gap,xright=1.5+gap,ybottom=glm.ci95.small[1],ytop=glm.ci95.small[2],col=col2,border=NA)
