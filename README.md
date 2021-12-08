@@ -23,23 +23,22 @@ Finite Gaussian Mixture analyses were carried out using the [baydem](https://git
 ### Figure 2
 
 #### GLM (Generalised Linear Model)
-
-
+Direct regression based fit on the normalised SPDs were carried out using the `nls()` function (`runscripts/nls.R`). Results are stored in the R image file `results/glm_res.RData`.
 
 #### Radiocarbon-dated Event Count model
+Radiocarbon-dated Event Count model were employed adapting the R script provided in the supplementary material from [Carleton 2021](https://doi.org/10.1002/jqs.3256). The model was fitted on 100 sets of sampled event count sequences based on 1 year temporal bins. All other settings were left unchanged from the script provided in the suppementary material with the exception for the prior of the growth rate (parameter `B`) which was updated to a weakly informative Gaussian with a mean of 0 and a standard deviation of 0.1. To ensure a satisfactory convergence the model was fitted over three chains using 6 million iterations (half used as burnin) sampled every 300 steps. Convergence was assessed computing Gelman-Rubin's diagnostic, which returned an Rhat equal to 1. The full script required to execute the analyses can be found in the file `runscripts/rec.R`. Results are stored in the R image file `results/rec_res.RData`. 
 
 #### Maximum Likelihood Approach
-Maximum likelihood approach model fitting were carried out using the [ADMUR](https://CRAN.R-project.org/package=ADMUR) R package version 1.0.3. 
-
+Maximum likelihood approach model fitting were carried out using the [ADMUR](https://CRAN.R-project.org/package=ADMUR) R package version 1.0.3. Parameter uncertainties were measured using the `mcmc()` function with 100,000 iterations, 2,000 burn-in steps, a thinning interval of 5, with a jump parameter of 0.0004.The full script required to execute the analyses can be found in the file `runscripts/admur.R`. Results are stored in the R image file `results/admur_res.RData`. 
 
 #### Bayesian Hierarchichal model with measurement error
-Bayesian Hierarchical model fitting with measurement error were carriou using the [nimbleCarbon](https://CRAN.R-project.org/package=nimbleCarbon) R package version 0.1.2.
+Bayesian Hierarchical model fitting with measurement error were carried out using the [nimbleCarbon](https://CRAN.R-project.org/package=nimbleCarbon) R package version 0.1.2. Posterior parameters were obtained by running three chains with 10,000 iterations with 3,000 steps used as burnin. Convergence was assessed computing Gelman-Rubin's diagnostic, which returned an Rhat equal to 1. The full script required to execute the analyses can be found in the file `runscripts/nimbleCarbon.R`. Results are stored in the R image file `results/nimbleCarbon_res.RData`. 
 
 #### Approximate Bayesian Computation
 Approximate Batesian Computation (ABC) was carried out using a custom script (`src/abc_sim_exp.R`) based on routines made available on the [rcarbon](https://CRAN.R-project.org/package=rcarbon) R package and introduced in [Di Napoli et al 2021](https://doi.org/10.1038/s41467-021-24252-z). Fit between candidate and target SPDs were computed by calculating the euclidean distance of between normalised probabilities of corresponding years. The posterior distribution was obtained using the rejection algorithm with a tolerance level of 0.1% and 100,000 simulations. The full script required to execute the analyses is stored in the file `runscripts/abc.R`. Results are stored in the R image file `results/abc_res.RData`.       
 
 ## Notes on Computing Requirement and Costs
-
+Please not that the execution of the scripts `baydem_gauss_mixture.R`, `rec.R`, and `abc.R` require multiple cores, and that the runtime for `abc.R`, `oxcal_kde.R`, `baydem_gauss_mixture.R`, and `rec.R` is over 24 hours. 
 
 ## Funding
 This research was supported by a Philip Leverhulme Prize (PLP-2019-304). 
