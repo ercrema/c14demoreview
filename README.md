@@ -24,6 +24,8 @@ Finite Gaussian Mixture analyses were carried out using the [baydem](https://git
 
 #### GLM (Generalised Linear Model)
 
+
+
 #### Radiocarbon-dated Event Count model
 
 #### Maximum Likelihood Approach
@@ -34,7 +36,7 @@ Maximum likelihood approach model fitting were carried out using the [ADMUR](htt
 Bayesian Hierarchical model fitting with measurement error were carriou using the [nimbleCarbon](https://CRAN.R-project.org/package=nimbleCarbon) R package version 0.1.2.
 
 #### Approximate Bayesian Computation
-
+Approximate Batesian Computation (ABC) was carried out using a custom script (`src/abc_sim_exp.R`) based on routines made available on the [rcarbon](https://CRAN.R-project.org/package=rcarbon) R package and introduced in [Di Napoli et al 2021](https://doi.org/10.1038/s41467-021-24252-z). Fit between candidate and target SPDs were computed by calculating the euclidean distance of between normalised probabilities of corresponding years. The posterior distribution was obtained using the rejection algorithm with a tolerance level of 0.1% and 100,000 simulations. The full script required to execute the analyses is stored in the file `runscripts/abc.R`. Results are stored in the R image file `results/abc_res.RData`.       
 
 ## Notes on Computing Requirement and Costs
 
