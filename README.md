@@ -13,7 +13,10 @@ The scripts `runscripts/simulate1.R` and `runscripts/simulate2.R` generate two s
 
 #### Bootstrapped cKDE 
 
+Composite Kernel Density Estimate (cKDE) on bootstrapped sampled calendar dates from calibrated distributions were computed using the [rcarbon](https://CRAN.R-project.org/package=rcarbon) R package version 1.4.1 using 1,000 iterations and a kernel bandwidth of 50 years (see `runscripts/bootstrapped_ckde.R`). Results are stored in the R image file `results/ckde_res.RData`.  
+
 #### _KDE Model_ 
+[OxCal](https://c14.arch.ox.ac.uk/oxcal.html) version 4.4.4 was used to locally run the `KDE_Model` function. OxCal scripts are contained in the folder `runscripts/oxcalscripts/` and were generated using the custom R function `kde_prepare()` (`src/kde_prepare.R`). The functions were executed from within R using the [oxcAAR](https://CRAN.R-project.org/package=oxcAAR) R Package version 1.1.1, and the outputs were read through the custom R function `read_kde()` (`src/kde_read.R`) and are stored in the R image file `results/oxcal_kde_res.RData`.  
 
 #### Gaussian Mixture 
 
