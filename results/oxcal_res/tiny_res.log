@@ -1,0 +1,200 @@
+OxCal v4.4.4 Bronk Ramsey (2021); r:5
+Atmospheric data from Reimer et al (2020)
+_Kernel N(0,1)
+  68.3% probability
+    -1 (68.3%) 1
+  95.4% probability
+    -2 (95.4%) 2
+_Scale U(0,1)
+  68.3% probability
+    0 (68.3%) 1
+  95.4% probability
+    0 (95.4%) 1
+1 R_Date(3450,20)
+  68.3% probability
+    1868BC (18.1%) 1850BC
+    1772BC (34.0%) 1738BC
+    1712BC (16.2%) 1696BC
+  95.4% probability
+    1878BC (23.9%) 1841BC
+    1824BC (10.2%) 1793BC
+    1780BC (61.3%) 1688BC
+2 R_Date(3200,20)
+  68.3% probability
+    1498BC (39.5%) 1471BC
+    1466BC (28.7%) 1446BC
+  95.4% probability
+    1504BC (95.4%) 1428BC
+3 R_Date(4097,20)
+  68.3% probability
+    2836BC (12.5%) 2818BC
+    2666BC (14.5%) 2646BC
+    2636BC (41.3%) 2580BC
+  95.4% probability
+    2851BC (20.2%) 2808BC
+    2748BC ( 5.3%) 2726BC
+    2698BC (69.9%) 2572BC
+4 R_Date(5513,20)
+  68.3% probability
+    4361BC (68.3%) 4338BC
+  95.4% probability
+    4443BC (16.1%) 4419BC
+    4401BC ( 4.1%) 4382BC
+    4371BC (75.2%) 4330BC
+5 R_Date(2950,20)
+  68.3% probability
+    1206BC (68.3%) 1125BC
+  95.4% probability
+    1255BC ( 1.1%) 1248BC
+    1226BC (94.3%) 1054BC
+6 R_Date(4652,20)
+  68.3% probability
+    3497BC (61.1%) 3436BC
+    3378BC ( 7.2%) 3371BC
+  95.4% probability
+    3514BC (77.5%) 3423BC
+    3412BC ( 5.4%) 3394BC
+    3385BC (12.6%) 3366BC
+7 R_Date(3423,20)
+  68.3% probability
+    1750BC (65.5%) 1685BC
+    1650BC ( 2.7%) 1644BC
+  95.4% probability
+    1868BC ( 6.2%) 1849BC
+    1771BC (89.2%) 1631BC
+8 R_Date(4495,20)
+  68.3% probability
+    3334BC (10.6%) 3310BC
+    3299BC ( 6.5%) 3284BC
+    3274BC ( 2.4%) 3268BC
+    3242BC (13.5%) 3214BC
+    3190BC (19.4%) 3148BC
+    3138BC (15.9%) 3104BC
+  95.4% probability
+    3340BC (95.4%) 3098BC
+9 R_Date(3646,20)
+  68.3% probability
+    2111BC ( 4.6%) 2104BC
+    2036BC (63.7%) 1960BC
+  95.4% probability
+    2131BC (18.1%) 2088BC
+    2046BC (77.3%) 1943BC
+10 R_Date(3792,20)
+  68.3% probability
+    2282BC (33.8%) 2250BC
+    2232BC ( 9.3%) 2220BC
+    2210BC (10.8%) 2198BC
+    2166BC (14.3%) 2150BC
+  95.4% probability
+    2292BC (72.7%) 2192BC
+    2180BC (22.7%) 2142BC
+( KDE_Model 
+KDE_Model()
+n=10
+) KDE_Model 
+i : Using logs - local probility low
+( MCMC(30000)
+Overall agreement  98.9%
+Dynamic agreement  98.9%
+Posterior 
+_Kernel Posterior 
+  68.3% probability
+    -1 (68.3%) 1
+  95.4% probability
+    -2 (95.4%) 2
+ Agreement  99.5%
+_Scale Posterior 
+  68.3% probability
+    1 (68.3%) 1
+  95.4% probability
+    1 (95.4%) 1
+ Agreement 100.0%
+1 Posterior 
+  68.3% probability
+    1868BC (17.9%) 1849BC
+    1772BC (34.3%) 1738BC
+    1713BC (16.1%) 1696BC
+  95.4% probability
+    1877BC (23.7%) 1840BC
+    1824BC (10.0%) 1794BC
+    1780BC (61.8%) 1688BC
+ Agreement  98.8%
+2 Posterior 
+  68.3% probability
+    1498BC (68.3%) 1446BC
+  95.4% probability
+    1504BC (95.4%) 1428BC
+ Agreement  99.9%
+3 Posterior 
+  68.3% probability
+    2834BC ( 9.7%) 2819BC
+    2666BC (14.8%) 2646BC
+    2637BC (43.8%) 2580BC
+  95.4% probability
+    2851BC (18.8%) 2808BC
+    2748BC ( 4.9%) 2726BC
+    2698BC (71.7%) 2572BC
+ Agreement 100.3%
+4 Posterior 
+  68.3% probability
+    4362BC (68.3%) 4337BC
+  95.4% probability
+    4443BC (12.7%) 4418BC
+    4400BC ( 3.6%) 4382BC
+    4372BC (79.1%) 4329BC
+ Agreement 101.5%
+5 Posterior 
+  68.3% probability
+    1208BC (68.3%) 1126BC
+  95.4% probability
+    1256BC ( 1.5%) 1246BC
+    1228BC (89.1%) 1102BC
+    1095BC ( 2.7%) 1077BC
+    1070BC ( 2.1%) 1056BC
+ Agreement 100.7%
+6 Posterior 
+  68.3% probability
+    3496BC (59.8%) 3436BC
+    3378BC ( 8.5%) 3370BC
+  95.4% probability
+    3514BC (76.4%) 3423BC
+    3411BC ( 5.1%) 3394BC
+    3386BC (13.9%) 3366BC
+ Agreement  98.8%
+7 Posterior 
+  68.3% probability
+    1750BC (66.6%) 1684BC
+    1648BC ( 1.7%) 1645BC
+  95.4% probability
+    1869BC ( 6.3%) 1848BC
+    1771BC (89.1%) 1631BC
+ Agreement  98.8%
+8 Posterior 
+  68.3% probability
+    3332BC ( 9.3%) 3311BC
+    3296BC ( 4.5%) 3285BC
+    3274BC ( 2.4%) 3268BC
+    3242BC (13.7%) 3212BC
+    3190BC (38.4%) 3103BC
+  95.4% probability
+    3340BC (95.4%) 3098BC
+ Agreement  99.5%
+9 Posterior 
+  68.3% probability
+    2109BC ( 3.1%) 2104BC
+    2035BC (65.2%) 1960BC
+  95.4% probability
+    2131BC (17.4%) 2088BC
+    2046BC (78.0%) 1943BC
+ Agreement  99.7%
+10 Posterior 
+  68.3% probability
+    2282BC (30.5%) 2250BC
+    2233BC (10.8%) 2218BC
+    2211BC (12.2%) 2198BC
+    2166BC (14.8%) 2148BC
+  95.4% probability
+    2291BC (71.9%) 2191BC
+    2181BC (23.5%) 2142BC
+ Agreement  98.5%
+) MCMC(120000)
