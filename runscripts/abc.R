@@ -23,12 +23,12 @@ spd.small.dens <- spd.small$grid$PrDens
 spd.target.dens <- list(spd.large.dens,spd.small.dens)
 
 # Generate priors
-nsim = 100000
+nsim = 250000
 set.seed(123)
 r = rnorm(nsim,mean=0,sd=0.1)
 
 # Setup parallel computing
-ncores = 8
+ncores = 9
 cl <- makeCluster(ncores)
 registerDoSNOW(cl)
 pb <- txtProgressBar(max = nsim, style = 3)
