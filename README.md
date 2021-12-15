@@ -64,6 +64,19 @@ Please not that the execution of the scripts `baydem_gauss_mixture.R`, `rec.R`, 
 │   ├── glm_res.RData
 │   ├── nimbleCarbon_res.RData
 │   ├── oxcal_kde_res.RData
+│   ├── oxcal_res
+│   │   ├── large_res
+│   │   ├── large_res.js
+│   │   ├── large_res.log
+│   │   ├── large_res.txt
+│   │   ├── small_res
+│   │   ├── small_res.js
+│   │   ├── small_res.log
+│   │   ├── small_res.txt
+│   │   ├── tiny_res
+│   │   ├── tiny_res.js
+│   │   ├── tiny_res.log
+│   │   └── tiny_res.txt
 │   └── rec_res.RData
 ├── runscripts
 │   ├── abc.R
@@ -75,12 +88,15 @@ Please not that the execution of the scripts `baydem_gauss_mixture.R`, `rec.R`, 
 │   ├── oxcal_kde.R
 │   ├── oxcalscripts
 │   │   ├── run_large.oxcal
-│   │   └── run_small.oxcal
+│   │   ├── run_small.oxcal
+│   │   └── run_tiny.oxcal
 │   └── rec.R
 └── src
     ├── abc_sim_exp.R
+    ├── executeOxcal.R
     ├── kde_prepare.R
     └── kde_read.R
+
 
 ```
 
