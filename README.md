@@ -13,14 +13,14 @@ The scripts `runscripts/simulate1.R` and `runscripts/simulate2.R` generate two s
 Composite Kernel Density Estimate (cKDE) on bootstrapped sampled calendar dates from calibrated distributions were computed using the [rcarbon](https://CRAN.R-project.org/package=rcarbon) R package version 1.4.2 using 1,000 iterations and a kernel bandwidth of 50 years (see `runscripts/bootstrapped_ckde.R`). Results are stored in the R image file `results/ckde_res.RData`.  The full script required to execute the analyses is stored in the file  `runscripts/bootstrapped_ckde.R`.  
 
 #### _KDE Model_ 
-[OxCal](https://c14.arch.ox.ac.uk/oxcal.html) version 4.4.4 was used to locally run the `KDE_Model` function. OxCal scripts are contained in the folder `runscripts/oxcalscripts/` and were generated using the custom R function `kde_prepare()` (`src/kde_prepare.R`). The functions were executed from within R using the [oxcAAR](https://CRAN.R-project.org/package=oxcAAR) R Package version 1.1.1, and the outputs were read through the custom R function `read_kde()` (`src/kde_read.R`) and are stored in the R image file `results/oxcal_kde_res.RData`. The full script required to execute the analyses is stored in the file  `runscripts/oxcal_kde.R`.  
+[OxCal](https://c14.arch.ox.ac.uk/oxcal.html) version 4.4.4 was used to locally run the `KDE_Model` function. OxCal scripts are contained in the folder `runscripts/oxcalscripts/` and were generated using the custom R function `kde_prepare()` (`src/kde_prepare.R`). The functions were executed from within R using the function `executeOxcal()` (`src/executeOxcal.R`) adapted from the [oxcAAR](https://CRAN.R-project.org/package=oxcAAR) R Package version 1.1.1. Raw oxcal outputs were saved in a subdirectory (`results/oxcal_res/*`), read in R through the custom function `read_kde()` (`src/kde_read.R`), processed, and stored in the R image file `results/oxcal_kde_res.RData`. The full script required to execute the analyses is stored in the file  `runscripts/oxcal_kde.R`.  
 
 #### Gaussian Mixture 
 Finite Gaussian Mixture analyses were carried out using the [baydem](https://github.com/eehh-stanford/baydem) R package version 1.0.0. For each of the dataset 19 models were fitted with the number of mixture components _K_ ranging from 2 to 20. The parameter for the dirichlet draw of the mixture probabilities (`alpha_d`) was set to 1, whilst priors for the gamma distribution were set to `alpha_s` = 5 and `alpha_r` = 0.008. The spacing for the measurement matrix was set to 1 year. MCMC were executed by running four chains with 5000 iterations each. Due to the extremely large size of the baydem output, only the most relevant information were extracted and stored in the R image file `results/baydem_res.RData`. The full script required to execute the analyses is stored in the file `runscripts/baydem_gauss_mixture.R`.      
 
 ### Figure 2 (Simulation n.2)
 
-#### GLM (Generalised Linear Model)
+#### Regression Fit on SPD
 Direct regression based fit on the normalised SPDs were carried out using the `nls()` function (`runscripts/nls.R`). Results are stored in the R image file `results/glm_res.RData`.
 
 #### Radiocarbon-dated Event Count model
