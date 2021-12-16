@@ -44,7 +44,7 @@ load(here('results','baydem_res.RData'))
 
 
 # Plot figure
-pdf(file=here('figures','figure1.pdf'),width=7,height=10)
+pdf(file=here('figures','figure1.pdf'),width=10,height=10)
 par(mfrow=c(3,3))
 plot(NULL,type='l',xlim=c(7000,3000),ylim=c(0,max(ckde.large.plot$hi,na.rm=T)),xlab='CalBP',ylab='KDE',main='a')
 polygon(c(7000:3000,3000,7000),c(sim$PrDens,0,0),border=NA,col='lightgrey')

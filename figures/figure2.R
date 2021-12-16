@@ -74,7 +74,7 @@ rect(xleft=9.5-gap,xright=9.5+gap,ybottom=abc.ci95.small[1],ytop=abc.ci95.small[
 points(9.5,abc.fit.small,pch=20,col=coldot,cex=1.2)
 
 axis(2)
-axis(1,at=c(1.25,3.25,5.25,7.25,9.25),labels=c('GLM','REC','ADMUR','nimbleCarbon','ABC'))
+axis(1,at=c(1.25,3.25,5.25,7.25,9.25),labels=c('a','b','c','d','e'))
 
 abline(h=0.002,lty=2)
 legend(x=1.2,y=0.003,legend=c('95% CI with n=500','95% CI with n=50','Mean Estimate'),col=c(col1,col2,1),pch=c(NA,NA,20),lwd=c(7,7,0),pt.cex=1.5,bty='n')
