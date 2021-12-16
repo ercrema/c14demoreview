@@ -94,15 +94,15 @@ n=10
 ) KDE_Model 
 i : Using logs - local probility low
 ( MCMC(30000)
-Overall agreement  98.9%
-Dynamic agreement  98.9%
+Overall agreement  98.7%
+Dynamic agreement  98.7%
 Posterior 
 _Kernel Posterior 
   68.3% probability
     -1 (68.3%) 1
   95.4% probability
     -2 (95.4%) 2
- Agreement  99.5%
+ Agreement  99.7%
 _Scale Posterior 
   68.3% probability
     1 (68.3%) 1
@@ -111,90 +111,90 @@ _Scale Posterior
  Agreement 100.0%
 1 Posterior 
   68.3% probability
-    1868BC (17.9%) 1849BC
-    1772BC (34.3%) 1738BC
-    1713BC (16.1%) 1696BC
+    1870BC (18.7%) 1848BC
+    1772BC (33.2%) 1738BC
+    1714BC (16.4%) 1696BC
   95.4% probability
-    1877BC (23.7%) 1840BC
-    1824BC (10.0%) 1794BC
-    1780BC (61.8%) 1688BC
- Agreement  98.8%
+    1877BC (23.9%) 1841BC
+    1824BC (10.0%) 1793BC
+    1782BC (61.5%) 1688BC
+ Agreement  97.8%
 2 Posterior 
   68.3% probability
-    1498BC (68.3%) 1446BC
+    1498BC (40.4%) 1471BC
+    1465BC (27.8%) 1446BC
   95.4% probability
     1504BC (95.4%) 1428BC
- Agreement  99.9%
+ Agreement  99.8%
 3 Posterior 
   68.3% probability
-    2834BC ( 9.7%) 2819BC
-    2666BC (14.8%) 2646BC
-    2637BC (43.8%) 2580BC
+    2834BC (10.6%) 2818BC
+    2666BC (14.7%) 2644BC
+    2639BC (43.0%) 2580BC
   95.4% probability
-    2851BC (18.8%) 2808BC
-    2748BC ( 4.9%) 2726BC
-    2698BC (71.7%) 2572BC
- Agreement 100.3%
+    2852BC (19.4%) 2808BC
+    2747BC ( 5.0%) 2726BC
+    2698BC (71.0%) 2572BC
+ Agreement  99.8%
 4 Posterior 
   68.3% probability
     4362BC (68.3%) 4337BC
   95.4% probability
-    4443BC (12.7%) 4418BC
+    4443BC (12.5%) 4419BC
     4400BC ( 3.6%) 4382BC
-    4372BC (79.1%) 4329BC
+    4372BC (79.3%) 4330BC
  Agreement 101.5%
 5 Posterior 
   68.3% probability
-    1208BC (68.3%) 1126BC
+    1208BC (50.5%) 1152BC
+    1146BC (17.8%) 1126BC
   95.4% probability
-    1256BC ( 1.5%) 1246BC
-    1228BC (89.1%) 1102BC
-    1095BC ( 2.7%) 1077BC
-    1070BC ( 2.1%) 1056BC
- Agreement 100.7%
+    1256BC ( 1.4%) 1246BC
+    1228BC (88.7%) 1106BC
+    1100BC ( 3.1%) 1079BC
+    1072BC ( 2.4%) 1056BC
+ Agreement 100.5%
 6 Posterior 
   68.3% probability
-    3496BC (59.8%) 3436BC
-    3378BC ( 8.5%) 3370BC
+    3496BC (60.3%) 3436BC
+    3379BC ( 8.0%) 3371BC
   95.4% probability
-    3514BC (76.4%) 3423BC
-    3411BC ( 5.1%) 3394BC
-    3386BC (13.9%) 3366BC
- Agreement  98.8%
+    3514BC (76.3%) 3422BC
+    3412BC ( 5.5%) 3394BC
+    3386BC (13.6%) 3366BC
+ Agreement  98.2%
 7 Posterior 
   68.3% probability
-    1750BC (66.6%) 1684BC
-    1648BC ( 1.7%) 1645BC
+    1750BC (68.3%) 1685BC
   95.4% probability
-    1869BC ( 6.3%) 1848BC
-    1771BC (89.1%) 1631BC
- Agreement  98.8%
+    1868BC ( 6.0%) 1849BC
+    1772BC (89.4%) 1632BC
+ Agreement  99.8%
 8 Posterior 
   68.3% probability
-    3332BC ( 9.3%) 3311BC
-    3296BC ( 4.5%) 3285BC
-    3274BC ( 2.4%) 3268BC
-    3242BC (13.7%) 3212BC
-    3190BC (38.4%) 3103BC
+    3333BC ( 8.9%) 3312BC
+    3298BC ( 5.9%) 3284BC
+    3272BC ( 1.1%) 3270BC
+    3241BC (12.6%) 3214BC
+    3190BC (39.6%) 3103BC
   95.4% probability
     3340BC (95.4%) 3098BC
- Agreement  99.5%
+ Agreement  99.6%
 9 Posterior 
   68.3% probability
-    2109BC ( 3.1%) 2104BC
-    2035BC (65.2%) 1960BC
+    2035BC (68.3%) 1960BC
   95.4% probability
-    2131BC (17.4%) 2088BC
-    2046BC (78.0%) 1943BC
- Agreement  99.7%
+    2130BC (17.1%) 2088BC
+    2048BC (78.3%) 1942BC
+ Agreement 100.1%
 10 Posterior 
   68.3% probability
-    2282BC (30.5%) 2250BC
-    2233BC (10.8%) 2218BC
-    2211BC (12.2%) 2198BC
-    2166BC (14.8%) 2148BC
+    2282BC (32.5%) 2250BC
+    2231BC ( 9.0%) 2220BC
+    2210BC (11.2%) 2198BC
+    2166BC (15.7%) 2149BC
   95.4% probability
-    2291BC (71.9%) 2191BC
-    2181BC (23.5%) 2142BC
- Agreement  98.5%
+    2292BC (71.6%) 2191BC
+    2181BC (23.8%) 2141BC
+ Agreement  98.7%
 ) MCMC(120000)

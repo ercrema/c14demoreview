@@ -1,0 +1,1713 @@
+OxCal v4.4.4 Bronk Ramsey (2021); r:5
+Atmospheric data from Reimer et al (2020)
+_Kernel N(0,1)
+  68.3% probability
+    -1 (68.3%) 1
+  95.4% probability
+    -2 (95.4%) 2
+_Scale U(0,1)
+  68.3% probability
+    0 (68.3%) 1
+  95.4% probability
+    0 (95.4%) 1
+1 R_Date(2948,20)
+  68.3% probability
+    1203BC (68.3%) 1124BC
+  95.4% probability
+    1224BC (95.4%) 1054BC
+2 R_Date(3364,20)
+  68.3% probability
+    1686BC (68.3%) 1617BC
+  95.4% probability
+    1739BC (10.8%) 1713BC
+    1694BC (78.9%) 1608BC
+    1578BC ( 5.8%) 1546BC
+3 R_Date(3277,20)
+  68.3% probability
+    1600BC (10.2%) 1588BC
+    1543BC (58.1%) 1505BC
+  95.4% probability
+    1612BC (95.4%) 1502BC
+4 R_Date(3830,20)
+  68.3% probability
+    2335BC ( 4.1%) 2328BC
+    2298BC (19.0%) 2274BC
+    2256BC (45.2%) 2206BC
+  95.4% probability
+    2402BC ( 3.6%) 2381BC
+    2348BC (91.8%) 2199BC
+5 R_Date(3098,20)
+  68.3% probability
+    1412BC (33.7%) 1382BC
+    1341BC (34.6%) 1310BC
+  95.4% probability
+    1425BC (95.4%) 1292BC
+6 R_Date(3637,20)
+  68.3% probability
+    2030BC (68.3%) 1958BC
+  95.4% probability
+    2128BC ( 9.8%) 2092BC
+    2042BC (85.7%) 1936BC
+7 R_Date(5031,20)
+  68.3% probability
+    3936BC (49.7%) 3874BC
+    3806BC (18.5%) 3782BC
+  95.4% probability
+    3946BC (93.4%) 3764BC
+    3727BC ( 2.0%) 3714BC
+8 R_Date(4934,20)
+  68.3% probability
+    3708BC (68.3%) 3652BC
+  95.4% probability
+    3768BC (18.6%) 3722BC
+    3716BC (76.9%) 3647BC
+9 R_Date(4177,20)
+  68.3% probability
+    2876BC (13.3%) 2856BC
+    2806BC (39.7%) 2751BC
+    2722BC (15.3%) 2701BC
+  95.4% probability
+    2882BC (20.4%) 2842BC
+    2814BC (75.1%) 2671BC
+10 R_Date(4006,20)
+  68.3% probability
+    2567BC (44.3%) 2528BC
+    2496BC (23.9%) 2476BC
+  95.4% probability
+    2574BC (61.6%) 2510BC
+    2506BC (33.8%) 2470BC
+11 R_Date(3047,20)
+  68.3% probability
+    1380BC (31.2%) 1344BC
+    1306BC (37.0%) 1266BC
+  95.4% probability
+    1396BC (41.2%) 1332BC
+    1326BC (48.2%) 1255BC
+    1249BC ( 6.0%) 1226BC
+12 R_Date(5389,20)
+  68.3% probability
+    4325BC (43.4%) 4288BC
+    4264BC (24.9%) 4241BC
+  95.4% probability
+    4333BC (84.5%) 4231BC
+    4194BC (11.0%) 4168BC
+13 R_Date(4504,20)
+  68.3% probability
+    3339BC (10.3%) 3316BC
+    3293BC ( 1.5%) 3289BC
+    3238BC (15.5%) 3206BC
+    3198BC (11.7%) 3172BC
+    3165BC (29.3%) 3104BC
+  95.4% probability
+    3346BC (28.7%) 3263BC
+    3247BC (66.7%) 3100BC
+14 R_Date(4140,20)
+  68.3% probability
+    2861BC (14.4%) 2834BC
+    2818BC ( 7.5%) 2804BC
+    2755BC (20.1%) 2720BC
+    2704BC (21.6%) 2666BC
+    2646BC ( 4.7%) 2636BC
+  95.4% probability
+    2871BC (30.4%) 2798BC
+    2780BC (65.0%) 2626BC
+15 R_Date(3737,20)
+  68.3% probability
+    2198BC (32.4%) 2166BC
+    2150BC (14.8%) 2133BC
+    2083BC (21.1%) 2056BC
+  95.4% probability
+    2204BC (61.7%) 2118BC
+    2098BC (33.7%) 2038BC
+16 R_Date(3079,20)
+  68.3% probability
+    1400BC (22.0%) 1375BC
+    1351BC (46.2%) 1301BC
+  95.4% probability
+    1413BC (95.4%) 1280BC
+17 R_Date(3423,20)
+  68.3% probability
+    1750BC (65.5%) 1685BC
+    1650BC ( 2.7%) 1644BC
+  95.4% probability
+    1868BC ( 6.2%) 1849BC
+    1771BC (89.2%) 1631BC
+18 R_Date(3699,20)
+  68.3% probability
+    2136BC (17.1%) 2116BC
+    2099BC (51.2%) 2037BC
+  95.4% probability
+    2194BC ( 4.4%) 2176BC
+    2144BC (90.3%) 2026BC
+    1990BC ( 0.7%) 1985BC
+19 R_Date(3386,20)
+  68.3% probability
+    1730BC ( 4.6%) 1724BC
+    1689BC (63.6%) 1629BC
+  95.4% probability
+    1740BC (21.0%) 1710BC
+    1698BC (74.4%) 1620BC
+20 R_Date(3454,20)
+  68.3% probability
+    1871BC (21.5%) 1847BC
+    1774BC (33.7%) 1739BC
+    1712BC (13.0%) 1696BC
+  95.4% probability
+    1878BC (26.2%) 1840BC
+    1825BC (12.6%) 1792BC
+    1782BC (38.7%) 1732BC
+    1721BC (17.8%) 1690BC
+21 R_Date(3008,20)
+  68.3% probability
+    1282BC (68.3%) 1215BC
+  95.4% probability
+    1379BC ( 9.6%) 1347BC
+    1304BC (81.6%) 1194BC
+    1174BC ( 2.0%) 1162BC
+    1143BC ( 2.2%) 1130BC
+22 R_Date(5057,20)
+  68.3% probability
+    3944BC (37.3%) 3893BC
+    3882BC (17.8%) 3856BC
+    3817BC (13.1%) 3798BC
+  95.4% probability
+    3948BC (95.4%) 3794BC
+23 R_Date(3084,20)
+  68.3% probability
+    1406BC (25.4%) 1376BC
+    1350BC (42.8%) 1302BC
+  95.4% probability
+    1416BC (95.4%) 1283BC
+24 R_Date(3509,20)
+  68.3% probability
+    1884BC (10.2%) 1872BC
+    1846BC (29.1%) 1814BC
+    1806BC (29.0%) 1774BC
+  95.4% probability
+    1894BC (95.4%) 1750BC
+25 R_Date(3035,20)
+  68.3% probability
+    1376BC (23.1%) 1349BC
+    1302BC (41.9%) 1260BC
+    1240BC ( 3.3%) 1235BC
+  95.4% probability
+    1386BC (31.1%) 1338BC
+    1317BC (64.4%) 1220BC
+26 R_Date(4449,20)
+  68.3% probability
+    3314BC ( 7.6%) 3296BC
+    3286BC (24.0%) 3240BC
+    3104BC (14.6%) 3078BC
+    3063BC (22.1%) 3028BC
+  95.4% probability
+    3330BC (42.1%) 3218BC
+    3186BC ( 7.6%) 3152BC
+    3123BC (45.7%) 3016BC
+27 R_Date(3449,20)
+  68.3% probability
+    1868BC (17.2%) 1850BC
+    1771BC (33.7%) 1738BC
+    1713BC (17.3%) 1696BC
+  95.4% probability
+    1877BC (23.2%) 1842BC
+    1824BC ( 9.6%) 1794BC
+    1780BC (62.6%) 1688BC
+28 R_Date(4032,20)
+  68.3% probability
+    2577BC (15.9%) 2561BC
+    2538BC (52.4%) 2492BC
+  95.4% probability
+    2620BC ( 4.8%) 2602BC
+    2583BC (90.7%) 2472BC
+29 R_Date(3231,20)
+  68.3% probability
+    1512BC (29.4%) 1492BC
+    1480BC (38.9%) 1452BC
+  95.4% probability
+    1532BC (95.4%) 1442BC
+30 R_Date(3616,20)
+  68.3% probability
+    2021BC (28.1%) 1994BC
+    1981BC (40.2%) 1944BC
+  95.4% probability
+    2032BC (95.4%) 1900BC
+31 R_Date(4173,20)
+  68.3% probability
+    2874BC (13.6%) 2856BC
+    2807BC ( 9.6%) 2794BC
+    2788BC (28.1%) 2750BC
+    2723BC (16.9%) 2700BC
+  95.4% probability
+    2881BC (20.1%) 2840BC
+    2816BC (75.3%) 2668BC
+32 R_Date(3732,20)
+  68.3% probability
+    2197BC (26.1%) 2170BC
+    2147BC (13.4%) 2132BC
+    2085BC (28.8%) 2052BC
+  95.4% probability
+    2202BC (55.7%) 2117BC
+    2098BC (39.8%) 2038BC
+33 R_Date(4486,20)
+  68.3% probability
+    3330BC (31.4%) 3263BC
+    3246BC (13.1%) 3218BC
+    3186BC (15.5%) 3153BC
+    3120BC ( 8.2%) 3101BC
+  95.4% probability
+    3340BC (55.9%) 3205BC
+    3199BC (39.6%) 3094BC
+34 R_Date(3601,20)
+  68.3% probability
+    2016BC (16.5%) 1998BC
+    1978BC (51.8%) 1926BC
+  95.4% probability
+    2026BC (23.4%) 1991BC
+    1986BC (72.0%) 1892BC
+35 R_Date(4613,20)
+  68.3% probability
+    3488BC (42.1%) 3469BC
+    3374BC (26.1%) 3362BC
+  95.4% probability
+    3496BC (60.4%) 3438BC
+    3379BC (35.1%) 3352BC
+36 R_Date(4434,20)
+  68.3% probability
+    3262BC ( 6.6%) 3248BC
+    3100BC (61.7%) 3021BC
+  95.4% probability
+    3322BC (21.4%) 3236BC
+    3177BC ( 2.4%) 3159BC
+    3106BC (66.3%) 3009BC
+    2982BC ( 5.4%) 2934BC
+37 R_Date(4158,20)
+  68.3% probability
+    2870BC (13.6%) 2846BC
+    2812BC ( 6.7%) 2800BC
+    2778BC (20.1%) 2742BC
+    2730BC (27.8%) 2676BC
+  95.4% probability
+    2876BC (19.3%) 2832BC
+    2821BC (72.7%) 2663BC
+    2650BC ( 3.5%) 2632BC
+38 R_Date(4017,20)
+  68.3% probability
+    2572BC (16.6%) 2556BC
+    2543BC (32.3%) 2514BC
+    2502BC (15.0%) 2488BC
+    2482BC ( 4.5%) 2476BC
+  95.4% probability
+    2576BC (95.4%) 2471BC
+39 R_Date(4624,20)
+  68.3% probability
+    3491BC (51.2%) 3465BC
+    3374BC (17.1%) 3365BC
+  95.4% probability
+    3500BC (71.1%) 3433BC
+    3380BC (24.4%) 3358BC
+40 R_Date(4807,20)
+  68.3% probability
+    3639BC (20.4%) 3626BC
+    3561BC (47.9%) 3533BC
+  95.4% probability
+    3642BC (28.5%) 3601BC
+    3589BC (66.9%) 3528BC
+41 R_Date(3208,20)
+  68.3% probability
+    1500BC (16.3%) 1490BC
+    1484BC (51.9%) 1449BC
+  95.4% probability
+    1506BC (95.4%) 1432BC
+42 R_Date(4130,20)
+  68.3% probability
+    2853BC (24.0%) 2808BC
+    2748BC (13.1%) 2725BC
+    2698BC (20.3%) 2662BC
+    2652BC (10.9%) 2631BC
+  95.4% probability
+    2868BC (29.8%) 2802BC
+    2776BC (63.2%) 2622BC
+    2600BC ( 2.4%) 2584BC
+43 R_Date(3414,20)
+  68.3% probability
+    1744BC (61.4%) 1682BC
+    1652BC ( 6.9%) 1643BC
+  95.4% probability
+    1862BC ( 1.6%) 1855BC
+    1766BC ( 1.8%) 1758BC
+    1753BC (92.1%) 1627BC
+44 R_Date(3485,20)
+  68.3% probability
+    1878BC (25.3%) 1842BC
+    1824BC (24.6%) 1792BC
+    1781BC (18.3%) 1750BC
+  95.4% probability
+    1882BC (95.4%) 1744BC
+45 R_Date(5602,20)
+  68.3% probability
+    4452BC (12.0%) 4442BC
+    4422BC (56.3%) 4369BC
+  95.4% probability
+    4488BC ( 5.1%) 4476BC
+    4458BC (90.4%) 4360BC
+46 R_Date(4081,20)
+  68.3% probability
+    2830BC ( 3.3%) 2823BC
+    2664BC ( 7.5%) 2650BC
+    2632BC (57.5%) 2574BC
+  95.4% probability
+    2846BC (11.4%) 2812BC
+    2743BC ( 1.6%) 2730BC
+    2693BC ( 0.5%) 2688BC
+    2676BC (75.4%) 2568BC
+    2524BC ( 6.6%) 2497BC
+47 R_Date(4378,20)
+  68.3% probability
+    3014BC ( 9.8%) 3002BC
+    2996BC (58.4%) 2926BC
+  95.4% probability
+    3082BC ( 6.7%) 3061BC
+    3028BC (88.7%) 2915BC
+48 R_Date(4908,20)
+  68.3% probability
+    3702BC (47.9%) 3679BC
+    3656BC (20.4%) 3646BC
+  95.4% probability
+    3750BC ( 0.5%) 3746BC
+    3711BC (95.0%) 3639BC
+49 R_Date(4994,20)
+  68.3% probability
+    3792BC (35.8%) 3756BC
+    3746BC (32.5%) 3711BC
+  95.4% probability
+    3932BC ( 0.7%) 3926BC
+    3911BC ( 9.6%) 3876BC
+    3804BC (80.9%) 3703BC
+    3674BC ( 4.3%) 3657BC
+50 R_Date(4668,20)
+  68.3% probability
+    3510BC (18.4%) 3488BC
+    3470BC (39.1%) 3428BC
+    3405BC ( 3.5%) 3400BC
+    3382BC ( 7.2%) 3373BC
+  95.4% probability
+    3516BC (23.8%) 3482BC
+    3476BC (71.7%) 3371BC
+51 R_Date(4147,20)
+  68.3% probability
+    2866BC (14.2%) 2839BC
+    2816BC ( 6.5%) 2803BC
+    2768BC (27.1%) 2716BC
+    2707BC (20.4%) 2669BC
+  95.4% probability
+    2872BC (30.5%) 2798BC
+    2782BC (64.9%) 2630BC
+52 R_Date(5580,20)
+  68.3% probability
+    4446BC ( 8.5%) 4438BC
+    4426BC (11.0%) 4416BC
+    4408BC (48.8%) 4364BC
+  95.4% probability
+    4450BC (95.4%) 4356BC
+53 R_Date(4643,20)
+  68.3% probability
+    3496BC (54.8%) 3452BC
+    3444BC ( 2.9%) 3440BC
+    3378BC (10.6%) 3368BC
+  95.4% probability
+    3512BC (78.6%) 3427BC
+    3406BC ( 1.9%) 3398BC
+    3383BC (14.9%) 3364BC
+54 R_Date(5310,20)
+  68.3% probability
+    4230BC ( 9.1%) 4216BC
+    4206BC ( 7.2%) 4194BC
+    4168BC ( 4.8%) 4160BC
+    4135BC (31.6%) 4087BC
+    4082BC (15.6%) 4056BC
+  95.4% probability
+    4238BC (27.1%) 4186BC
+    4176BC (68.4%) 4050BC
+55 R_Date(4414,20)
+  68.3% probability
+    3094BC (63.0%) 3011BC
+    2976BC ( 3.2%) 2968BC
+    2944BC ( 2.0%) 2940BC
+  95.4% probability
+    3261BC ( 1.6%) 3251BC
+    3100BC (93.8%) 2924BC
+56 R_Date(3430,20)
+  68.3% probability
+    1862BC ( 3.3%) 1856BC
+    1766BC ( 4.3%) 1759BC
+    1751BC (20.6%) 1730BC
+    1724BC (40.1%) 1688BC
+  95.4% probability
+    1872BC (10.7%) 1846BC
+    1814BC ( 1.0%) 1806BC
+    1774BC (79.3%) 1668BC
+    1656BC ( 4.5%) 1636BC
+57 R_Date(4437,20)
+  68.3% probability
+    3264BC ( 9.2%) 3246BC
+    3102BC (59.0%) 3022BC
+  95.4% probability
+    3326BC (25.5%) 3232BC
+    3181BC ( 3.5%) 3156BC
+    3110BC (62.8%) 3009BC
+    2982BC ( 2.0%) 2958BC
+    2954BC ( 1.7%) 2934BC
+58 R_Date(5321,20)
+  68.3% probability
+    4234BC ( 8.6%) 4221BC
+    4201BC ( 6.6%) 4191BC
+    4172BC ( 5.5%) 4164BC
+    4132BC (47.5%) 4061BC
+  95.4% probability
+    4243BC (42.2%) 4154BC
+    4142BC (53.3%) 4052BC
+59 R_Date(3063,20)
+  68.3% probability
+    1386BC (40.1%) 1338BC
+    1318BC (28.2%) 1286BC
+  95.4% probability
+    1405BC (95.4%) 1264BC
+60 R_Date(4762,20)
+  68.3% probability
+    3626BC (64.0%) 3561BC
+    3533BC ( 4.3%) 3528BC
+  95.4% probability
+    3633BC (95.4%) 3520BC
+61 R_Date(3825,20)
+  68.3% probability
+    2296BC (19.3%) 2271BC
+    2260BC (49.0%) 2204BC
+  95.4% probability
+    2398BC ( 1.8%) 2385BC
+    2345BC (92.5%) 2198BC
+    2162BC ( 1.1%) 2152BC
+62 R_Date(5194,20)
+  68.3% probability
+    4040BC (34.4%) 4020BC
+    3992BC (33.9%) 3972BC
+  95.4% probability
+    4045BC (95.4%) 3962BC
+63 R_Date(4134,20)
+  68.3% probability
+    2857BC (14.6%) 2829BC
+    2824BC ( 8.6%) 2806BC
+    2751BC (15.7%) 2722BC
+    2701BC (20.9%) 2663BC
+    2650BC ( 8.6%) 2632BC
+  95.4% probability
+    2870BC (30.4%) 2800BC
+    2778BC (64.6%) 2622BC
+    2590BC ( 0.5%) 2586BC
+64 R_Date(5348,20)
+  68.3% probability
+    4308BC ( 1.7%) 4305BC
+    4249BC (17.9%) 4226BC
+    4198BC (26.1%) 4166BC
+    4124BC ( 4.4%) 4115BC
+    4096BC (18.1%) 4068BC
+  95.4% probability
+    4318BC ( 8.2%) 4296BC
+    4256BC (22.1%) 4219BC
+    4204BC (29.4%) 4160BC
+    4133BC (35.8%) 4056BC
+65 R_Date(3253,20)
+  68.3% probability
+    1534BC (68.3%) 1498BC
+  95.4% probability
+    1602BC ( 3.3%) 1583BC
+    1544BC (75.0%) 1491BC
+    1484BC (17.1%) 1448BC
+66 R_Date(3365,20)
+  68.3% probability
+    1686BC (68.3%) 1618BC
+  95.4% probability
+    1739BC (11.3%) 1712BC
+    1695BC (79.4%) 1608BC
+    1577BC ( 3.3%) 1561BC
+    1554BC ( 1.5%) 1546BC
+67 R_Date(4397,20)
+  68.3% probability
+    3080BC (12.3%) 3062BC
+    3028BC (15.9%) 3008BC
+    2987BC (40.0%) 2930BC
+  95.4% probability
+    3092BC (22.3%) 3050BC
+    3040BC (73.1%) 2922BC
+68 R_Date(3429,20)
+  68.3% probability
+    1862BC ( 3.0%) 1856BC
+    1766BC ( 3.9%) 1759BC
+    1751BC (61.4%) 1688BC
+  95.4% probability
+    1872BC (10.0%) 1846BC
+    1813BC ( 0.8%) 1806BC
+    1774BC (79.4%) 1667BC
+    1657BC ( 5.2%) 1634BC
+69 R_Date(5979,20)
+  68.3% probability
+    4902BC (38.8%) 4863BC
+    4854BC (19.1%) 4832BC
+    4814BC (10.4%) 4800BC
+  95.4% probability
+    4936BC (95.4%) 4795BC
+70 R_Date(4706,20)
+  68.3% probability
+    3522BC (17.7%) 3502BC
+    3431BC (50.6%) 3380BC
+  95.4% probability
+    3606BC ( 4.0%) 3586BC
+    3530BC (26.0%) 3492BC
+    3464BC (65.5%) 3374BC
+71 R_Date(3876,20)
+  68.3% probability
+    2451BC (18.1%) 2420BC
+    2406BC (19.1%) 2376BC
+    2352BC (31.0%) 2298BC
+  95.4% probability
+    2461BC (95.4%) 2287BC
+72 R_Date(3289,20)
+  68.3% probability
+    1607BC (29.4%) 1580BC
+    1544BC (38.9%) 1514BC
+  95.4% probability
+    1613BC (95.4%) 1507BC
+73 R_Date(4739,20)
+  68.3% probability
+    3625BC (45.4%) 3576BC
+    3570BC ( 4.7%) 3562BC
+    3534BC (15.8%) 3516BC
+    3390BC ( 2.3%) 3386BC
+  95.4% probability
+    3630BC (57.2%) 3554BC
+    3539BC (20.1%) 3506BC
+    3430BC (18.1%) 3380BC
+74 R_Date(5751,20)
+  68.3% probability
+    4654BC (10.6%) 4638BC
+    4614BC (57.7%) 4546BC
+  95.4% probability
+    4684BC (95.4%) 4537BC
+75 R_Date(5292,20)
+  68.3% probability
+    4226BC (20.0%) 4198BC
+    4166BC (26.4%) 4124BC
+    4115BC (11.4%) 4096BC
+    4066BC (10.5%) 4050BC
+  95.4% probability
+    4234BC (25.8%) 4190BC
+    4172BC (69.7%) 4045BC
+76 R_Date(3855,20)
+  68.3% probability
+    2402BC (12.2%) 2380BC
+    2348BC (49.2%) 2284BC
+    2248BC ( 6.9%) 2234BC
+  95.4% probability
+    2456BC (10.9%) 2416BC
+    2410BC (68.5%) 2276BC
+    2255BC (16.1%) 2206BC
+77 R_Date(3788,20)
+  68.3% probability
+    2282BC (29.7%) 2251BC
+    2230BC ( 6.7%) 2220BC
+    2210BC (11.2%) 2197BC
+    2170BC (20.6%) 2147BC
+  95.4% probability
+    2290BC (68.1%) 2191BC
+    2182BC (27.4%) 2142BC
+78 R_Date(3853,20)
+  68.3% probability
+    2401BC (10.0%) 2382BC
+    2346BC (48.0%) 2284BC
+    2248BC ( 7.7%) 2234BC
+    2217BC ( 2.6%) 2211BC
+  95.4% probability
+    2454BC ( 9.6%) 2417BC
+    2410BC (67.5%) 2276BC
+    2256BC (18.3%) 2206BC
+79 R_Date(4922,20)
+  68.3% probability
+    3706BC (54.2%) 3672BC
+    3659BC (14.0%) 3649BC
+  95.4% probability
+    3764BC ( 7.5%) 3736BC
+    3714BC (88.0%) 3642BC
+80 R_Date(4487,20)
+  68.3% probability
+    3330BC (30.6%) 3264BC
+    3246BC (13.2%) 3217BC
+    3186BC (15.7%) 3152BC
+    3122BC ( 8.8%) 3102BC
+  95.4% probability
+    3340BC (55.5%) 3206BC
+    3198BC (39.9%) 3094BC
+81 R_Date(3747,20)
+  68.3% probability
+    2200BC (64.9%) 2136BC
+    2074BC ( 3.4%) 2068BC
+  95.4% probability
+    2275BC ( 3.9%) 2256BC
+    2206BC (70.6%) 2126BC
+    2092BC (21.0%) 2040BC
+82 R_Date(4544,20)
+  68.3% probability
+    3362BC (32.3%) 3332BC
+    3216BC (24.6%) 3188BC
+    3151BC (11.4%) 3132BC
+  95.4% probability
+    3366BC (37.5%) 3321BC
+    3236BC (33.9%) 3176BC
+    3161BC (24.0%) 3104BC
+83 R_Date(4115,20)
+  68.3% probability
+    2848BC (22.9%) 2811BC
+    2744BC ( 7.4%) 2729BC
+    2694BC ( 4.5%) 2684BC
+    2678BC (33.4%) 2624BC
+  95.4% probability
+    2860BC (27.3%) 2806BC
+    2754BC (12.4%) 2720BC
+    2703BC (55.8%) 2578BC
+84 R_Date(3226,20)
+  68.3% probability
+    1508BC (25.2%) 1492BC
+    1481BC (43.1%) 1451BC
+  95.4% probability
+    1518BC (95.4%) 1440BC
+85 R_Date(3415,20)
+  68.3% probability
+    1744BC (61.9%) 1683BC
+    1652BC ( 6.4%) 1643BC
+  95.4% probability
+    1862BC ( 1.7%) 1855BC
+    1766BC (93.7%) 1628BC
+86 R_Date(2936,20)
+  68.3% probability
+    1206BC (68.3%) 1113BC
+  95.4% probability
+    1216BC (95.4%) 1052BC
+87 R_Date(4495,20)
+  68.3% probability
+    3334BC (10.6%) 3310BC
+    3299BC ( 6.5%) 3284BC
+    3274BC ( 2.4%) 3268BC
+    3242BC (13.5%) 3214BC
+    3190BC (19.4%) 3148BC
+    3138BC (15.9%) 3104BC
+  95.4% probability
+    3340BC (95.4%) 3098BC
+88 R_Date(4666,20)
+  68.3% probability
+    3510BC (18.7%) 3487BC
+    3470BC (40.1%) 3428BC
+    3404BC ( 2.2%) 3400BC
+    3382BC ( 7.3%) 3373BC
+  95.4% probability
+    3516BC (95.4%) 3370BC
+89 R_Date(5289,20)
+  68.3% probability
+    4226BC (20.0%) 4198BC
+    4166BC (26.7%) 4124BC
+    4114BC (10.4%) 4097BC
+    4067BC (11.3%) 4048BC
+  95.4% probability
+    4234BC (25.1%) 4192BC
+    4171BC (69.0%) 4044BC
+    4008BC ( 1.3%) 4001BC
+90 R_Date(5328,20)
+  68.3% probability
+    4238BC (10.0%) 4222BC
+    4200BC ( 8.5%) 4186BC
+    4176BC ( 7.7%) 4163BC
+    4130BC (42.1%) 4060BC
+  95.4% probability
+    4248BC (44.7%) 4154BC
+    4140BC (50.8%) 4052BC
+91 R_Date(5358,20)
+  68.3% probability
+    4316BC (12.7%) 4298BC
+    4254BC (21.6%) 4228BC
+    4196BC (24.6%) 4168BC
+    4092BC ( 9.4%) 4075BC
+  95.4% probability
+    4324BC (16.6%) 4291BC
+    4261BC (25.7%) 4221BC
+    4202BC (27.9%) 4162BC
+    4131BC (25.2%) 4057BC
+92 R_Date(4166,20)
+  68.3% probability
+    2874BC (14.9%) 2849BC
+    2810BC ( 8.5%) 2796BC
+    2785BC (25.1%) 2745BC
+    2728BC (19.8%) 2696BC
+  95.4% probability
+    2880BC (19.6%) 2837BC
+    2818BC (74.4%) 2666BC
+    2647BC ( 1.4%) 2637BC
+93 R_Date(3401,20)
+  68.3% probability
+    1738BC (24.9%) 1713BC
+    1696BC (25.1%) 1670BC
+    1656BC (18.2%) 1636BC
+  95.4% probability
+    1744BC (95.4%) 1625BC
+94 R_Date(3645,20)
+  68.3% probability
+    2035BC (68.3%) 1960BC
+  95.4% probability
+    2131BC (17.1%) 2088BC
+    2046BC (78.3%) 1942BC
+95 R_Date(4101,20)
+  68.3% probability
+    2839BC (15.7%) 2816BC
+    2669BC (34.0%) 2618BC
+    2610BC (18.6%) 2580BC
+  95.4% probability
+    2852BC (22.1%) 2808BC
+    2748BC ( 6.4%) 2726BC
+    2698BC (67.0%) 2574BC
+96 R_Date(4514,20)
+  68.3% probability
+    3344BC (10.4%) 3324BC
+    3233BC (29.6%) 3180BC
+    3158BC (28.2%) 3108BC
+  95.4% probability
+    3354BC (23.9%) 3282BC
+    3277BC ( 2.4%) 3266BC
+    3244BC (69.1%) 3102BC
+97 R_Date(4090,20)
+  68.3% probability
+    2835BC ( 9.5%) 2818BC
+    2666BC (12.1%) 2646BC
+    2636BC (46.7%) 2576BC
+  95.4% probability
+    2848BC (16.3%) 2810BC
+    2745BC ( 3.3%) 2728BC
+    2696BC (73.8%) 2572BC
+    2514BC ( 2.1%) 2502BC
+98 R_Date(3021,20)
+  68.3% probability
+    1367BC ( 5.6%) 1359BC
+    1291BC (62.6%) 1223BC
+  95.4% probability
+    1385BC (19.8%) 1340BC
+    1312BC (75.7%) 1206BC
+99 R_Date(3908,20)
+  68.3% probability
+    2462BC (43.5%) 2404BC
+    2379BC (24.8%) 2349BC
+  95.4% probability
+    2467BC (90.7%) 2340BC
+    2321BC ( 4.7%) 2304BC
+100 R_Date(3548,20)
+  68.3% probability
+    1932BC (58.7%) 1880BC
+    1838BC ( 9.6%) 1827BC
+  95.4% probability
+    1951BC (68.7%) 1872BC
+    1846BC (16.4%) 1816BC
+    1804BC (10.3%) 1775BC
+( KDE_Model 
+KDE_Model()
+n=100
+) KDE_Model 
+i : Using logs - local probility low
+( MCMC(30000)
+Overall agreement  93.0%
+Dynamic agreement  92.5%
+Posterior 
+_Kernel Posterior 
+  68.3% probability
+    -1 (68.3%) 1
+  95.4% probability
+    -2 (95.4%) 2
+ Agreement  99.7%
+_Scale Posterior 
+  68.3% probability
+    0 (68.3%) 1
+  95.4% probability
+    0 (95.4%) 1
+ Agreement 100.0%
+1 Posterior 
+  68.3% probability
+    1210BC (65.4%) 1138BC
+    1132BC ( 2.9%) 1129BC
+  95.4% probability
+    1256BC ( 1.5%) 1246BC
+    1228BC (92.4%) 1079BC
+    1068BC ( 1.5%) 1058BC
+ Agreement 101.3%
+2 Posterior 
+  68.3% probability
+    1686BC (68.3%) 1616BC
+  95.4% probability
+    1740BC (10.4%) 1712BC
+    1695BC (78.9%) 1607BC
+    1580BC ( 6.2%) 1546BC
+ Agreement  99.4%
+3 Posterior 
+  68.3% probability
+    1600BC (11.0%) 1587BC
+    1543BC (57.3%) 1505BC
+  95.4% probability
+    1612BC (95.4%) 1502BC
+ Agreement  99.1%
+4 Posterior 
+  68.3% probability
+    2334BC ( 3.3%) 2328BC
+    2298BC (19.6%) 2274BC
+    2258BC (45.3%) 2206BC
+  95.4% probability
+    2403BC ( 3.7%) 2380BC
+    2348BC (91.5%) 2198BC
+    2158BC ( 0.2%) 2155BC
+ Agreement  99.2%
+5 Posterior 
+  68.3% probability
+    1414BC (37.6%) 1381BC
+    1342BC (30.6%) 1312BC
+  95.4% probability
+    1425BC (95.4%) 1296BC
+ Agreement  99.5%
+6 Posterior 
+  68.3% probability
+    2029BC (68.3%) 1958BC
+  95.4% probability
+    2126BC ( 8.9%) 2092BC
+    2042BC (86.6%) 1936BC
+ Agreement  99.7%
+7 Posterior 
+  68.3% probability
+    3934BC (48.2%) 3874BC
+    3806BC (20.0%) 3782BC
+  95.4% probability
+    3946BC (92.8%) 3764BC
+    3730BC ( 2.6%) 3714BC
+ Agreement  98.8%
+8 Posterior 
+  68.3% probability
+    3708BC (68.3%) 3652BC
+  95.4% probability
+    3766BC (17.0%) 3722BC
+    3716BC (78.4%) 3646BC
+ Agreement  99.9%
+9 Posterior 
+  68.3% probability
+    2876BC (12.9%) 2857BC
+    2806BC (40.1%) 2751BC
+    2722BC (15.3%) 2701BC
+  95.4% probability
+    2882BC (20.1%) 2842BC
+    2814BC (75.3%) 2672BC
+ Agreement  98.9%
+10 Posterior 
+  68.3% probability
+    2567BC (45.8%) 2528BC
+    2496BC (22.5%) 2476BC
+  95.4% probability
+    2573BC (95.4%) 2470BC
+ Agreement  99.2%
+11 Posterior 
+  68.3% probability
+    1381BC (35.6%) 1344BC
+    1306BC (32.7%) 1270BC
+  95.4% probability
+    1398BC (45.2%) 1332BC
+    1326BC (45.6%) 1256BC
+    1248BC ( 4.7%) 1226BC
+ Agreement 100.2%
+12 Posterior 
+  68.3% probability
+    4324BC (41.5%) 4289BC
+    4264BC (26.8%) 4240BC
+  95.4% probability
+    4332BC (83.1%) 4230BC
+    4194BC (11.7%) 4168BC
+    4085BC ( 0.7%) 4080BC
+ Agreement  97.9%
+13 Posterior 
+  68.3% probability
+    3339BC (10.7%) 3316BC
+    3238BC (16.1%) 3205BC
+    3197BC (11.5%) 3172BC
+    3166BC (30.0%) 3104BC
+  95.4% probability
+    3346BC (29.2%) 3262BC
+    3247BC (66.2%) 3100BC
+ Agreement  99.6%
+14 Posterior 
+  68.3% probability
+    2862BC (14.4%) 2834BC
+    2820BC ( 7.5%) 2805BC
+    2756BC (20.6%) 2719BC
+    2704BC (21.5%) 2666BC
+    2646BC ( 4.3%) 2636BC
+  95.4% probability
+    2871BC (30.1%) 2798BC
+    2780BC (65.3%) 2625BC
+ Agreement  99.6%
+15 Posterior 
+  68.3% probability
+    2198BC (31.5%) 2166BC
+    2150BC (14.4%) 2134BC
+    2083BC (22.3%) 2054BC
+  95.4% probability
+    2204BC (61.1%) 2117BC
+    2098BC (34.4%) 2037BC
+ Agreement  99.0%
+16 Posterior 
+  68.3% probability
+    1402BC (25.2%) 1374BC
+    1351BC (43.1%) 1303BC
+  95.4% probability
+    1414BC (95.4%) 1281BC
+ Agreement  99.9%
+17 Posterior 
+  68.3% probability
+    1750BC (66.8%) 1684BC
+    1648BC ( 1.5%) 1645BC
+  95.4% probability
+    1868BC ( 5.7%) 1849BC
+    1771BC (89.7%) 1631BC
+ Agreement  99.5%
+18 Posterior 
+  68.3% probability
+    2136BC (16.0%) 2116BC
+    2098BC (52.3%) 2037BC
+  95.4% probability
+    2194BC ( 3.9%) 2177BC
+    2145BC (91.6%) 2026BC
+ Agreement 100.2%
+19 Posterior 
+  68.3% probability
+    1729BC ( 4.0%) 1724BC
+    1690BC (64.3%) 1629BC
+  95.4% probability
+    1740BC (20.4%) 1710BC
+    1699BC (75.1%) 1620BC
+ Agreement  99.6%
+20 Posterior 
+  68.3% probability
+    1871BC (20.3%) 1847BC
+    1774BC (34.5%) 1738BC
+    1713BC (13.5%) 1696BC
+  95.4% probability
+    1878BC (25.0%) 1840BC
+    1825BC (12.5%) 1792BC
+    1783BC (39.9%) 1732BC
+    1722BC (18.1%) 1690BC
+ Agreement  98.9%
+21 Posterior 
+  68.3% probability
+    1284BC (68.3%) 1216BC
+  95.4% probability
+    1380BC (12.4%) 1345BC
+    1305BC (81.1%) 1196BC
+    1172BC ( 1.0%) 1164BC
+    1141BC ( 1.0%) 1133BC
+ Agreement  99.0%
+22 Posterior 
+  68.3% probability
+    3944BC (35.4%) 3893BC
+    3882BC (18.1%) 3856BC
+    3819BC (14.8%) 3798BC
+  95.4% probability
+    3948BC (95.4%) 3794BC
+ Agreement  99.4%
+23 Posterior 
+  68.3% probability
+    1406BC (27.8%) 1376BC
+    1347BC (40.5%) 1304BC
+  95.4% probability
+    1416BC (95.4%) 1286BC
+ Agreement  99.9%
+24 Posterior 
+  68.3% probability
+    1883BC ( 8.7%) 1872BC
+    1846BC (59.6%) 1774BC
+  95.4% probability
+    1892BC (95.4%) 1751BC
+ Agreement  99.7%
+25 Posterior 
+  68.3% probability
+    1379BC (28.7%) 1346BC
+    1304BC (39.5%) 1259BC
+  95.4% probability
+    1390BC (35.4%) 1337BC
+    1319BC (60.1%) 1220BC
+ Agreement  99.5%
+26 Posterior 
+  68.3% probability
+    3313BC ( 7.2%) 3296BC
+    3286BC (24.9%) 3240BC
+    3104BC (13.9%) 3080BC
+    3062BC (22.2%) 3028BC
+  95.4% probability
+    3330BC (42.7%) 3218BC
+    3186BC ( 7.4%) 3152BC
+    3124BC (45.4%) 3016BC
+ Agreement  99.3%
+27 Posterior 
+  68.3% probability
+    1868BC (16.1%) 1850BC
+    1771BC (34.3%) 1738BC
+    1714BC (17.9%) 1696BC
+  95.4% probability
+    1876BC (22.3%) 1842BC
+    1824BC ( 9.1%) 1794BC
+    1780BC (64.0%) 1688BC
+ Agreement  98.8%
+28 Posterior 
+  68.3% probability
+    2578BC (16.6%) 2561BC
+    2538BC (51.6%) 2491BC
+  95.4% probability
+    2621BC ( 4.9%) 2601BC
+    2584BC (90.6%) 2472BC
+ Agreement  99.2%
+29 Posterior 
+  68.3% probability
+    1512BC (31.4%) 1492BC
+    1480BC (36.9%) 1453BC
+  95.4% probability
+    1531BC (95.4%) 1443BC
+ Agreement  98.3%
+30 Posterior 
+  68.3% probability
+    2021BC (27.4%) 1994BC
+    1981BC (40.8%) 1944BC
+  95.4% probability
+    2031BC (95.4%) 1900BC
+ Agreement  99.3%
+31 Posterior 
+  68.3% probability
+    2873BC (12.1%) 2856BC
+    2807BC (39.4%) 2750BC
+    2723BC (16.8%) 2700BC
+  95.4% probability
+    2881BC (19.2%) 2840BC
+    2816BC (76.2%) 2668BC
+ Agreement  99.3%
+32 Posterior 
+  68.3% probability
+    2197BC (25.0%) 2170BC
+    2147BC (13.7%) 2132BC
+    2085BC (29.6%) 2051BC
+  95.4% probability
+    2202BC (54.9%) 2116BC
+    2100BC (40.5%) 2037BC
+ Agreement  98.7%
+33 Posterior 
+  68.3% probability
+    3330BC (31.8%) 3264BC
+    3246BC (13.1%) 3218BC
+    3186BC (15.6%) 3153BC
+    3118BC ( 7.8%) 3101BC
+  95.4% probability
+    3340BC (95.4%) 3093BC
+ Agreement  99.6%
+34 Posterior 
+  68.3% probability
+    2016BC (15.5%) 1998BC
+    1978BC (52.8%) 1924BC
+  95.4% probability
+    2026BC (95.4%) 1892BC
+ Agreement  99.4%
+35 Posterior 
+  68.3% probability
+    3488BC (41.6%) 3468BC
+    3374BC (26.7%) 3362BC
+  95.4% probability
+    3496BC (59.1%) 3440BC
+    3380BC (36.3%) 3352BC
+ Agreement  96.5%
+36 Posterior 
+  68.3% probability
+    3262BC ( 6.7%) 3248BC
+    3100BC (61.6%) 3020BC
+  95.4% probability
+    3322BC (22.0%) 3236BC
+    3176BC ( 2.2%) 3159BC
+    3108BC (65.9%) 3009BC
+    2980BC ( 5.3%) 2934BC
+ Agreement  98.7%
+37 Posterior 
+  68.3% probability
+    2870BC (13.0%) 2847BC
+    2812BC ( 6.5%) 2800BC
+    2778BC (19.8%) 2743BC
+    2731BC (29.0%) 2678BC
+  95.4% probability
+    2876BC (19.1%) 2832BC
+    2821BC (73.0%) 2662BC
+    2650BC ( 3.3%) 2632BC
+ Agreement  99.5%
+38 Posterior 
+  68.3% probability
+    2572BC (19.3%) 2555BC
+    2540BC (31.7%) 2514BC
+    2502BC (17.2%) 2488BC
+  95.4% probability
+    2576BC (95.4%) 2472BC
+ Agreement  99.4%
+39 Posterior 
+  68.3% probability
+    3491BC (50.4%) 3464BC
+    3374BC (17.9%) 3364BC
+  95.4% probability
+    3500BC (70.4%) 3432BC
+    3380BC (25.1%) 3357BC
+ Agreement  97.4%
+40 Posterior 
+  68.3% probability
+    3638BC (18.6%) 3626BC
+    3563BC (49.7%) 3533BC
+  95.4% probability
+    3642BC (27.7%) 3602BC
+    3589BC (67.8%) 3528BC
+ Agreement  97.9%
+41 Posterior 
+  68.3% probability
+    1500BC (68.3%) 1450BC
+  95.4% probability
+    1507BC (95.4%) 1433BC
+ Agreement  99.5%
+42 Posterior 
+  68.3% probability
+    2853BC (22.9%) 2808BC
+    2748BC (13.1%) 2724BC
+    2698BC (20.2%) 2661BC
+    2656BC (12.1%) 2631BC
+  95.4% probability
+    2868BC (29.3%) 2802BC
+    2776BC (63.8%) 2621BC
+    2601BC ( 2.4%) 2584BC
+ Agreement  99.3%
+43 Posterior 
+  68.3% probability
+    1744BC (62.1%) 1682BC
+    1652BC ( 6.1%) 1643BC
+  95.4% probability
+    1862BC ( 1.1%) 1856BC
+    1766BC (94.4%) 1627BC
+ Agreement 100.1%
+44 Posterior 
+  68.3% probability
+    1876BC (23.9%) 1842BC
+    1822BC (24.4%) 1792BC
+    1781BC (20.0%) 1751BC
+  95.4% probability
+    1882BC (95.4%) 1744BC
+ Agreement  99.2%
+45 Posterior 
+  68.3% probability
+    4451BC ( 8.9%) 4442BC
+    4421BC (59.4%) 4368BC
+  95.4% probability
+    4488BC ( 3.6%) 4476BC
+    4458BC (91.9%) 4359BC
+ Agreement 100.0%
+46 Posterior 
+  68.3% probability
+    2829BC ( 2.2%) 2824BC
+    2664BC ( 8.0%) 2650BC
+    2634BC (58.0%) 2574BC
+  95.4% probability
+    2846BC (11.2%) 2812BC
+    2743BC ( 1.5%) 2730BC
+    2692BC ( 0.2%) 2690BC
+    2676BC (76.2%) 2567BC
+    2524BC ( 6.3%) 2497BC
+ Agreement  99.2%
+47 Posterior 
+  68.3% probability
+    3014BC ( 8.8%) 3004BC
+    2996BC (59.5%) 2926BC
+  95.4% probability
+    3082BC ( 6.4%) 3061BC
+    3029BC (89.0%) 2915BC
+ Agreement  99.9%
+48 Posterior 
+  68.3% probability
+    3702BC (45.4%) 3680BC
+    3656BC (22.9%) 3646BC
+  95.4% probability
+    3711BC (95.4%) 3638BC
+ Agreement  98.2%
+49 Posterior 
+  68.3% probability
+    3792BC (68.3%) 3711BC
+  95.4% probability
+    3916BC ( 9.1%) 3876BC
+    3804BC (81.7%) 3702BC
+    3676BC ( 4.6%) 3656BC
+ Agreement  99.8%
+50 Posterior 
+  68.3% probability
+    3510BC (17.6%) 3488BC
+    3470BC (38.4%) 3426BC
+    3406BC ( 4.7%) 3398BC
+    3383BC ( 7.5%) 3373BC
+  95.4% probability
+    3516BC (23.1%) 3482BC
+    3477BC (72.3%) 3371BC
+ Agreement  98.6%
+51 Posterior 
+  68.3% probability
+    2865BC (12.8%) 2838BC
+    2816BC ( 6.4%) 2802BC
+    2771BC (49.1%) 2668BC
+  95.4% probability
+    2872BC (29.5%) 2798BC
+    2781BC (65.9%) 2630BC
+ Agreement  99.4%
+52 Posterior 
+  68.3% probability
+    4444BC ( 4.8%) 4438BC
+    4426BC (63.4%) 4362BC
+  95.4% probability
+    4450BC (95.4%) 4356BC
+ Agreement 100.0%
+53 Posterior 
+  68.3% probability
+    3496BC (57.9%) 3448BC
+    3378BC (10.4%) 3368BC
+  95.4% probability
+    3512BC (78.2%) 3426BC
+    3407BC ( 1.8%) 3398BC
+    3384BC (15.4%) 3362BC
+ Agreement  98.6%
+54 Posterior 
+  68.3% probability
+    4230BC ( 7.7%) 4216BC
+    4206BC ( 6.4%) 4194BC
+    4168BC ( 3.9%) 4161BC
+    4136BC (50.3%) 4055BC
+  95.4% probability
+    4238BC (26.0%) 4186BC
+    4176BC (69.5%) 4050BC
+ Agreement  99.7%
+55 Posterior 
+  68.3% probability
+    3094BC (61.7%) 3012BC
+    2976BC ( 4.3%) 2967BC
+    2946BC ( 2.2%) 2942BC
+  95.4% probability
+    3261BC ( 1.5%) 3251BC
+    3100BC (93.9%) 2924BC
+ Agreement  99.2%
+56 Posterior 
+  68.3% probability
+    1766BC (68.3%) 1688BC
+  95.4% probability
+    1872BC ( 9.9%) 1846BC
+    1813BC ( 0.9%) 1806BC
+    1775BC (80.4%) 1668BC
+    1656BC ( 4.3%) 1636BC
+ Agreement  99.4%
+57 Posterior 
+  68.3% probability
+    3264BC ( 9.5%) 3245BC
+    3102BC (58.7%) 3022BC
+  95.4% probability
+    3326BC (25.7%) 3231BC
+    3181BC ( 3.3%) 3157BC
+    3110BC (62.5%) 3009BC
+    2981BC ( 3.9%) 2934BC
+ Agreement  99.2%
+58 Posterior 
+  68.3% probability
+    4233BC ( 7.3%) 4222BC
+    4201BC ( 6.5%) 4191BC
+    4172BC ( 5.0%) 4164BC
+    4131BC (49.4%) 4060BC
+  95.4% probability
+    4242BC (41.1%) 4154BC
+    4141BC (54.3%) 4052BC
+ Agreement  99.7%
+59 Posterior 
+  68.3% probability
+    1390BC (43.5%) 1338BC
+    1319BC (24.7%) 1286BC
+  95.4% probability
+    1405BC (95.4%) 1266BC
+ Agreement 100.1%
+60 Posterior 
+  68.3% probability
+    3625BC (62.5%) 3560BC
+    3534BC ( 5.8%) 3528BC
+  95.4% probability
+    3633BC (95.4%) 3520BC
+ Agreement  98.8%
+61 Posterior 
+  68.3% probability
+    2296BC (18.9%) 2271BC
+    2260BC (49.4%) 2204BC
+  95.4% probability
+    2398BC ( 1.9%) 2384BC
+    2346BC (92.2%) 2198BC
+    2162BC ( 1.3%) 2152BC
+ Agreement  99.3%
+62 Posterior 
+  68.3% probability
+    4040BC (33.1%) 4020BC
+    3993BC (35.2%) 3972BC
+  95.4% probability
+    4044BC (95.4%) 3963BC
+ Agreement  98.7%
+63 Posterior 
+  68.3% probability
+    2856BC (13.2%) 2831BC
+    2825BC ( 8.9%) 2807BC
+    2752BC (16.5%) 2722BC
+    2701BC (21.2%) 2662BC
+    2651BC ( 8.5%) 2633BC
+  95.4% probability
+    2870BC (29.8%) 2799BC
+    2779BC (65.1%) 2622BC
+    2592BC ( 0.6%) 2586BC
+ Agreement  99.5%
+64 Posterior 
+  68.3% probability
+    4248BC (17.0%) 4226BC
+    4198BC (26.3%) 4166BC
+    4124BC ( 4.8%) 4114BC
+    4097BC (20.2%) 4066BC
+  95.4% probability
+    4318BC ( 6.9%) 4296BC
+    4256BC (21.2%) 4218BC
+    4204BC (29.8%) 4159BC
+    4134BC (37.6%) 4055BC
+ Agreement  98.9%
+65 Posterior 
+  68.3% probability
+    1534BC (68.3%) 1498BC
+  95.4% probability
+    1602BC ( 2.9%) 1586BC
+    1544BC (76.2%) 1490BC
+    1484BC (16.3%) 1449BC
+ Agreement  98.7%
+66 Posterior 
+  68.3% probability
+    1684BC (68.3%) 1618BC
+  95.4% probability
+    1740BC (11.2%) 1712BC
+    1695BC (79.3%) 1607BC
+    1578BC ( 4.9%) 1546BC
+ Agreement  99.5%
+67 Posterior 
+  68.3% probability
+    3080BC (12.4%) 3062BC
+    3028BC (16.2%) 3006BC
+    2986BC (39.7%) 2930BC
+  95.4% probability
+    3092BC (21.8%) 3051BC
+    3042BC (73.7%) 2922BC
+ Agreement  99.4%
+68 Posterior 
+  68.3% probability
+    1762BC (68.3%) 1688BC
+  95.4% probability
+    1872BC ( 9.0%) 1846BC
+    1774BC (81.3%) 1666BC
+    1658BC ( 5.2%) 1634BC
+ Agreement  99.8%
+69 Posterior 
+  68.3% probability
+    4896BC (29.5%) 4866BC
+    4852BC (21.3%) 4832BC
+    4816BC (17.5%) 4799BC
+  95.4% probability
+    4934BC (95.4%) 4791BC
+ Agreement  98.1%
+70 Posterior 
+  68.3% probability
+    3522BC (16.7%) 3503BC
+    3431BC (51.6%) 3380BC
+  95.4% probability
+    3606BC ( 3.6%) 3586BC
+    3530BC (25.6%) 3491BC
+    3464BC (66.2%) 3374BC
+ Agreement 100.1%
+71 Posterior 
+  68.3% probability
+    2450BC (17.4%) 2421BC
+    2406BC (19.7%) 2375BC
+    2352BC (31.2%) 2298BC
+  95.4% probability
+    2461BC (95.4%) 2286BC
+ Agreement  99.8%
+72 Posterior 
+  68.3% probability
+    1607BC (29.6%) 1579BC
+    1546BC (38.7%) 1514BC
+  95.4% probability
+    1612BC (95.4%) 1508BC
+ Agreement  99.4%
+73 Posterior 
+  68.3% probability
+    3624BC (47.0%) 3576BC
+    3568BC ( 2.3%) 3564BC
+    3534BC (17.5%) 3516BC
+    3392BC ( 1.4%) 3389BC
+  95.4% probability
+    3630BC (55.2%) 3553BC
+    3540BC (21.1%) 3506BC
+    3430BC (19.2%) 3380BC
+ Agreement  98.0%
+74 Posterior 
+  68.3% probability
+    4649BC ( 4.7%) 4641BC
+    4614BC (63.5%) 4544BC
+  95.4% probability
+    4683BC (95.0%) 4536BC
+    4512BC ( 0.4%) 4510BC
+ Agreement 100.9%
+75 Posterior 
+  68.3% probability
+    4225BC (17.9%) 4198BC
+    4166BC (26.5%) 4122BC
+    4116BC (11.9%) 4096BC
+    4069BC (11.9%) 4050BC
+  95.4% probability
+    4234BC (24.4%) 4190BC
+    4173BC (71.1%) 4044BC
+ Agreement  98.8%
+76 Posterior 
+  68.3% probability
+    2403BC (12.3%) 2380BC
+    2349BC (47.6%) 2284BC
+    2249BC ( 7.0%) 2234BC
+    2217BC ( 1.5%) 2213BC
+  95.4% probability
+    2455BC (79.5%) 2276BC
+    2255BC (15.9%) 2206BC
+ Agreement  99.1%
+77 Posterior 
+  68.3% probability
+    2282BC (28.8%) 2250BC
+    2231BC ( 6.9%) 2220BC
+    2210BC (11.9%) 2196BC
+    2170BC (20.7%) 2146BC
+  95.4% probability
+    2290BC (68.0%) 2188BC
+    2182BC (27.5%) 2142BC
+ Agreement  98.5%
+78 Posterior 
+  68.3% probability
+    2402BC (10.3%) 2382BC
+    2348BC (47.3%) 2283BC
+    2250BC ( 8.0%) 2234BC
+    2218BC ( 2.6%) 2211BC
+  95.4% probability
+    2454BC ( 9.8%) 2416BC
+    2410BC (67.4%) 2276BC
+    2256BC (18.2%) 2206BC
+ Agreement  99.1%
+79 Posterior 
+  68.3% probability
+    3706BC (53.3%) 3671BC
+    3660BC (15.0%) 3649BC
+  95.4% probability
+    3764BC ( 6.9%) 3735BC
+    3715BC (88.6%) 3642BC
+ Agreement  99.0%
+80 Posterior 
+  68.3% probability
+    3330BC (30.4%) 3262BC
+    3246BC (12.6%) 3218BC
+    3186BC (15.0%) 3152BC
+    3126BC (10.2%) 3102BC
+  95.4% probability
+    3340BC (55.8%) 3206BC
+    3199BC (39.7%) 3094BC
+ Agreement  99.7%
+81 Posterior 
+  68.3% probability
+    2200BC (64.2%) 2136BC
+    2074BC ( 4.1%) 2067BC
+  95.4% probability
+    2274BC ( 3.6%) 2256BC
+    2206BC (70.0%) 2126BC
+    2094BC (21.9%) 2040BC
+ Agreement  98.6%
+82 Posterior 
+  68.3% probability
+    3362BC (32.4%) 3331BC
+    3216BC (24.6%) 3187BC
+    3151BC (11.3%) 3132BC
+  95.4% probability
+    3367BC (37.8%) 3320BC
+    3236BC (33.9%) 3176BC
+    3161BC (23.7%) 3105BC
+ Agreement  99.2%
+83 Posterior 
+  68.3% probability
+    2848BC (22.3%) 2811BC
+    2744BC ( 7.0%) 2729BC
+    2694BC (38.9%) 2623BC
+  95.4% probability
+    2860BC (27.0%) 2805BC
+    2754BC (12.3%) 2720BC
+    2704BC (56.1%) 2578BC
+ Agreement  99.5%
+84 Posterior 
+  68.3% probability
+    1509BC (26.5%) 1492BC
+    1481BC (41.8%) 1452BC
+  95.4% probability
+    1527BC (95.4%) 1439BC
+ Agreement  98.7%
+85 Posterior 
+  68.3% probability
+    1745BC (62.4%) 1682BC
+    1652BC ( 5.9%) 1643BC
+  95.4% probability
+    1862BC ( 1.1%) 1856BC
+    1766BC (94.3%) 1628BC
+ Agreement  99.8%
+86 Posterior 
+  68.3% probability
+    1207BC (57.0%) 1140BC
+    1133BC (11.2%) 1118BC
+  95.4% probability
+    1218BC (95.4%) 1056BC
+ Agreement 102.1%
+87 Posterior 
+  68.3% probability
+    3334BC (11.1%) 3310BC
+    3300BC ( 6.7%) 3284BC
+    3274BC ( 1.6%) 3270BC
+    3242BC (13.9%) 3214BC
+    3190BC (19.7%) 3146BC
+    3138BC (15.4%) 3104BC
+  95.4% probability
+    3340BC (95.4%) 3098BC
+ Agreement  99.5%
+88 Posterior 
+  68.3% probability
+    3510BC (18.7%) 3487BC
+    3471BC (41.7%) 3428BC
+    3382BC ( 7.8%) 3373BC
+  95.4% probability
+    3516BC (95.4%) 3370BC
+ Agreement  98.8%
+89 Posterior 
+  68.3% probability
+    4226BC (18.2%) 4198BC
+    4166BC (26.9%) 4123BC
+    4115BC (10.7%) 4096BC
+    4069BC (12.4%) 4048BC
+  95.4% probability
+    4234BC (23.9%) 4192BC
+    4172BC (70.3%) 4044BC
+    4008BC ( 1.3%) 4001BC
+ Agreement  98.8%
+90 Posterior 
+  68.3% probability
+    4236BC ( 8.3%) 4223BC
+    4200BC ( 7.9%) 4187BC
+    4176BC ( 7.9%) 4164BC
+    4130BC (44.1%) 4062BC
+  95.4% probability
+    4246BC (43.6%) 4154BC
+    4140BC (51.9%) 4052BC
+ Agreement  99.6%
+91 Posterior 
+  68.3% probability
+    4316BC (10.2%) 4298BC
+    4254BC (20.7%) 4228BC
+    4196BC (24.8%) 4167BC
+    4094BC (12.6%) 4070BC
+  95.4% probability
+    4323BC (14.3%) 4291BC
+    4261BC (25.0%) 4221BC
+    4202BC (28.7%) 4161BC
+    4132BC (27.4%) 4056BC
+ Agreement  98.3%
+92 Posterior 
+  68.3% probability
+    2872BC (14.1%) 2850BC
+    2810BC ( 8.3%) 2796BC
+    2784BC (25.4%) 2746BC
+    2728BC (20.5%) 2696BC
+  95.4% probability
+    2880BC (19.2%) 2836BC
+    2819BC (74.7%) 2666BC
+    2648BC ( 1.5%) 2636BC
+ Agreement  99.3%
+93 Posterior 
+  68.3% probability
+    1738BC (25.1%) 1712BC
+    1697BC (25.3%) 1670BC
+    1656BC (17.9%) 1636BC
+  95.4% probability
+    1744BC (95.4%) 1625BC
+ Agreement  99.3%
+94 Posterior 
+  68.3% probability
+    2035BC (68.3%) 1958BC
+  95.4% probability
+    2130BC (16.1%) 2087BC
+    2048BC (79.3%) 1942BC
+ Agreement  99.8%
+95 Posterior 
+  68.3% probability
+    2840BC (15.0%) 2816BC
+    2670BC (34.8%) 2616BC
+    2611BC (18.5%) 2580BC
+  95.4% probability
+    2852BC (21.6%) 2808BC
+    2748BC ( 6.6%) 2724BC
+    2700BC (67.2%) 2574BC
+ Agreement  99.5%
+96 Posterior 
+  68.3% probability
+    3344BC (11.2%) 3324BC
+    3233BC (29.7%) 3179BC
+    3158BC (27.5%) 3108BC
+  95.4% probability
+    3354BC (27.0%) 3266BC
+    3244BC (68.4%) 3102BC
+ Agreement  99.7%
+97 Posterior 
+  68.3% probability
+    2834BC ( 8.2%) 2820BC
+    2666BC (11.2%) 2648BC
+    2636BC (48.9%) 2577BC
+  95.4% probability
+    2849BC (15.9%) 2810BC
+    2745BC ( 3.2%) 2728BC
+    2696BC (74.6%) 2571BC
+    2514BC ( 1.8%) 2502BC
+ Agreement 100.0%
+98 Posterior 
+  68.3% probability
+    1370BC (11.3%) 1355BC
+    1292BC (56.9%) 1226BC
+  95.4% probability
+    1385BC (22.9%) 1340BC
+    1312BC (72.5%) 1211BC
+ Agreement  98.7%
+99 Posterior 
+  68.3% probability
+    2462BC (43.5%) 2404BC
+    2379BC (24.8%) 2349BC
+  95.4% probability
+    2468BC (90.8%) 2340BC
+    2321BC ( 4.7%) 2304BC
+ Agreement  99.7%
+100 Posterior 
+  68.3% probability
+    1934BC (58.6%) 1879BC
+    1838BC ( 9.7%) 1826BC
+  95.4% probability
+    1951BC (67.8%) 1872BC
+    1847BC (16.8%) 1815BC
+    1804BC (10.9%) 1774BC
+ Agreement  98.2%
+) MCMC(240000)
