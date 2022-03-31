@@ -78,17 +78,17 @@ polygon(c(oxcal.tiny.plot$CalBP,rev(oxcal.tiny.plot$CalBP)),c(oxcal.tiny.plot$lo
 lines(oxcal.tiny.plot$CalBP,oxcal.tiny.plot$mean,lwd=2,lty=2)
 
 
-plot(NULL,type='n',xlim=c(7000,3000),ylim=c(0,max(baydem.large.plot$hi,na.rm=T)),xlab='CalBP',ylab='Probability',main='Truncated Gaussian Mixture (n=1000)',cex.main=0.8)
+plot(NULL,type='n',xlim=c(7000,3000),ylim=c(0,max(baydem.large.plot$hi,na.rm=T)),xlab='CalBP',ylab='Probability',main='Bayesian Gaussian Mixture (n=1000)',cex.main=0.8)
 polygon(c(7000:3000,3000,7000),c(sim$PrDens,0,0),border=NA,col='lightgrey')
 polygon(c(baydem.large.plot$CalBP,rev(baydem.large.plot$CalBP)),c(baydem.large.plot$lo,rev(baydem.large.plot$hi)),border=NA,col=rgb(0,0,1,0.2))
 lines(baydem.large.plot$CalBP,baydem.large.plot$m,lwd=2,lty=2)
 
-plot(NULL,type='n',xlim=c(7000,3000),ylim=c(0,max(baydem.small.plot$hi,na.rm=T)),xlab='CalBP',ylab='Probability',main='Truncated Gaussian Mixture (n=100)',cex.main=0.8)
+plot(NULL,type='n',xlim=c(7000,3000),ylim=c(0,max(baydem.small.plot$hi,na.rm=T)),xlab='CalBP',ylab='Probability',main='Bayesian Gaussian Mixture (n=100)',cex.main=0.8)
 polygon(c(7000:3000,3000,7000),c(sim$PrDens,0,0),border=NA,col='lightgrey')
 polygon(c(baydem.small.plot$CalBP,rev(baydem.small.plot$CalBP)),c(baydem.small.plot$lo,rev(baydem.small.plot$hi)),border=NA,col=rgb(0,0,1,0.2))
 lines(baydem.small.plot$CalBP,baydem.small.plot$m,lwd=2,lty=2)
 
-plot(NULL,type='n',xlim=c(7000,3000),ylim=c(0,max(baydem.tiny.plot$hi,na.rm=T)),xlab='CalBP',ylab='Probability',main='Truncated Gaussian Mixture (n=10)',cex.main=0.8)
+plot(NULL,type='n',xlim=c(7000,3000),ylim=c(0,max(baydem.tiny.plot$hi,na.rm=T)),xlab='CalBP',ylab='Probability',main='Bayesian Gaussian Mixture (n=10)',cex.main=0.8)
 polygon(c(7000:3000,3000,7000),c(sim$PrDens,0,0),border=NA,col='lightgrey')
 polygon(c(baydem.tiny.plot$CalBP,rev(baydem.tiny.plot$CalBP)),c(baydem.tiny.plot$lo,rev(baydem.tiny.plot$hi)),border=NA,col=rgb(0,0,1,0.2))
 lines(baydem.tiny.plot$CalBP,baydem.tiny.plot$m,lwd=2,lty=2)
