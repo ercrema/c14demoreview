@@ -44,51 +44,51 @@ load(here('results','baydem_res.RData'))
 
 
 # Plot figure
-pdf(file=here('figures','figure1.pdf'),width=10,height=10)
-par(mfrow=c(3,3))
-plot(NULL,type='l',xlim=c(7000,3000),ylim=c(0,max(ckde.large.plot$hi,na.rm=T)),xlab='CalBP',ylab='KDE',main='a')
+tiff(file=here('figures','figure1.tiff'),width=174,height=160,units = 'mm',res=1200)
+par(mfrow=c(3,3),mar=c(4,4,2,1))
+plot(NULL,type='l',xlim=c(7000,3000),ylim=c(0,max(ckde.large.plot$hi,na.rm=T)),xlab='CalBP',ylab='KDE',main='cKDE (n=1000)',cex.main=0.8)
 polygon(c(7000:3000,3000,7000),c(sim$PrDens,0,0),border=NA,col='lightgrey')
 polygon(c(ckde.large.plot$CalBP,rev(ckde.large.plot$CalBP)),c(ckde.large.plot$lo,rev(ckde.large.plot$hi)),border=NA,col=rgb(0,0,1,0.2))
 lines(ckde.large.plot$CalBP,ckde.large.plot$mean,lwd=2,lty=2)
 
-plot(NULL,type='l',xlim=c(7000,3000),ylim=c(0,max(ckde.small.plot$hi,na.rm=T)),xlab='CalBP',ylab='KDE',main='b')
+plot(NULL,type='l',xlim=c(7000,3000),ylim=c(0,max(ckde.small.plot$hi,na.rm=T)),xlab='CalBP',ylab='KDE',main='cKDE (n=100)',cex.main=0.8)
 polygon(c(7000:3000,3000,7000),c(sim$PrDens,0,0),border=NA,col='lightgrey')
 polygon(c(ckde.small.plot$CalBP,rev(ckde.small.plot$CalBP)),c(ckde.small.plot$lo,rev(ckde.small.plot$hi)),border=NA,col=rgb(0,0,1,0.2))
 lines(ckde.small.plot$CalBP,ckde.small.plot$mean,lwd=2,lty=2)
 
-plot(NULL,type='l',xlim=c(7000,3000),ylim=c(0,max(ckde.tiny.plot$hi,na.rm=T)),xlab='CalBP',ylab='KDE',main='c')
+plot(NULL,type='l',xlim=c(7000,3000),ylim=c(0,max(ckde.tiny.plot$hi,na.rm=T)),xlab='CalBP',ylab='KDE',main='cKDE (n=10)',cex.main=0.8)
 polygon(c(7000:3000,3000,7000),c(sim$PrDens,0,0),border=NA,col='lightgrey')
 polygon(c(ckde.tiny.plot$CalBP,rev(ckde.tiny.plot$CalBP)),c(ckde.tiny.plot$lo,rev(ckde.tiny.plot$hi)),border=NA,col=rgb(0,0,1,0.2))
 lines(ckde.tiny.plot$CalBP,ckde.tiny.plot$mean,lwd=2,lty=2)
 
 
-plot(NULL,type='l',xlim=c(7000,3000),ylim=c(0,max(oxcal.large.plot$hi,na.rm=T)),xlab='CalBP',ylab='KDE',main='d')
+plot(NULL,type='l',xlim=c(7000,3000),ylim=c(0,max(oxcal.large.plot$hi,na.rm=T)),xlab='CalBP',ylab='KDE',main='OxCal KDE_Model (n=1000)',cex.main=0.8)
 polygon(c(7000:3000,3000,7000),c(sim$PrDens*5*sum(oxcal.large.plot$mean),0,0),border=NA,col='lightgrey')
 polygon(c(oxcal.large.plot$CalBP,rev(oxcal.large.plot$CalBP)),c(oxcal.large.plot$lo,rev(oxcal.large.plot$hi)),border=NA,col=rgb(0,0,1,0.2))
 lines(oxcal.large.plot$CalBP,oxcal.large.plot$mean,lwd=2,lty=2)
 
-plot(NULL,type='l',xlim=c(7000,3000),ylim=c(0,max(oxcal.small.plot$hi,na.rm=T)),xlab='CalBP',ylab='KDE',main='e')
+plot(NULL,type='l',xlim=c(7000,3000),ylim=c(0,max(oxcal.small.plot$hi,na.rm=T)),xlab='CalBP',ylab='KDE',main='OxCal KDE_Model (n=100)',cex.main=0.8)
 polygon(c(7000:3000,3000,7000),c(sim$PrDens*5*sum(oxcal.small.plot$mean),0,0),border=NA,col='lightgrey')
 polygon(c(oxcal.small.plot$CalBP,rev(oxcal.small.plot$CalBP)),c(oxcal.small.plot$lo,rev(oxcal.small.plot$hi)),border=NA,col=rgb(0,0,1,0.2))
 lines(oxcal.small.plot$CalBP,oxcal.small.plot$mean,lwd=2,lty=2)
 
-plot(NULL,type='l',xlim=c(7000,3000),ylim=c(0,max(oxcal.tiny.plot$hi,na.rm=T)),xlab='CalBP',ylab='KDE',main='f')
+plot(NULL,type='l',xlim=c(7000,3000),ylim=c(0,max(oxcal.tiny.plot$hi,na.rm=T)),xlab='CalBP',ylab='KDE',main='OxCal KDE_Model (n=10)',cex.main=0.8)
 polygon(c(7000:3000,3000,7000),c(sim$PrDens*5*sum(oxcal.tiny.plot$mean),0,0),border=NA,col='lightgrey')
 polygon(c(oxcal.tiny.plot$CalBP,rev(oxcal.tiny.plot$CalBP)),c(oxcal.tiny.plot$lo,rev(oxcal.tiny.plot$hi)),border=NA,col=rgb(0,0,1,0.2))
 lines(oxcal.tiny.plot$CalBP,oxcal.tiny.plot$mean,lwd=2,lty=2)
 
 
-plot(NULL,type='n',xlim=c(7000,3000),ylim=c(0,max(baydem.large.plot$hi,na.rm=T)),xlab='CalBP',ylab='Probability',main='g')
+plot(NULL,type='n',xlim=c(7000,3000),ylim=c(0,max(baydem.large.plot$hi,na.rm=T)),xlab='CalBP',ylab='Probability',main='Truncated Gaussian Mixture (n=1000)',cex.main=0.8)
 polygon(c(7000:3000,3000,7000),c(sim$PrDens,0,0),border=NA,col='lightgrey')
 polygon(c(baydem.large.plot$CalBP,rev(baydem.large.plot$CalBP)),c(baydem.large.plot$lo,rev(baydem.large.plot$hi)),border=NA,col=rgb(0,0,1,0.2))
 lines(baydem.large.plot$CalBP,baydem.large.plot$m,lwd=2,lty=2)
 
-plot(NULL,type='n',xlim=c(7000,3000),ylim=c(0,max(baydem.small.plot$hi,na.rm=T)),xlab='CalBP',ylab='Probability',main='h')
+plot(NULL,type='n',xlim=c(7000,3000),ylim=c(0,max(baydem.small.plot$hi,na.rm=T)),xlab='CalBP',ylab='Probability',main='Truncated Gaussian Mixture (n=100)',cex.main=0.8)
 polygon(c(7000:3000,3000,7000),c(sim$PrDens,0,0),border=NA,col='lightgrey')
 polygon(c(baydem.small.plot$CalBP,rev(baydem.small.plot$CalBP)),c(baydem.small.plot$lo,rev(baydem.small.plot$hi)),border=NA,col=rgb(0,0,1,0.2))
 lines(baydem.small.plot$CalBP,baydem.small.plot$m,lwd=2,lty=2)
 
-plot(NULL,type='n',xlim=c(7000,3000),ylim=c(0,max(baydem.tiny.plot$hi,na.rm=T)),xlab='CalBP',ylab='Probability',main='i')
+plot(NULL,type='n',xlim=c(7000,3000),ylim=c(0,max(baydem.tiny.plot$hi,na.rm=T)),xlab='CalBP',ylab='Probability',main='Truncated Gaussian Mixture (n=10)',cex.main=0.8)
 polygon(c(7000:3000,3000,7000),c(sim$PrDens,0,0),border=NA,col='lightgrey')
 polygon(c(baydem.tiny.plot$CalBP,rev(baydem.tiny.plot$CalBP)),c(baydem.tiny.plot$lo,rev(baydem.tiny.plot$hi)),border=NA,col=rgb(0,0,1,0.2))
 lines(baydem.tiny.plot$CalBP,baydem.tiny.plot$m,lwd=2,lty=2)
