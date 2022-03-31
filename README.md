@@ -51,9 +51,7 @@ Please not that the execution of the scripts `baydem_gauss_mixture.R`, `rec.R`, 
 │   ├── small_sim1_sample.csv
 │   └── tiny_sim1_sample.csv
 ├── figures
-│   ├── figure1.pdf
 │   ├── figure1.R
-│   ├── figure2.pdf
 │   └── figure2.R
 ├── README.md
 ├── results
